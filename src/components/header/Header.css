@@ -240,7 +240,7 @@
     }
 
     .cart ::before{
-        right: 378px;
+        right: 362px;
     }
 
     .login-cadatro{
@@ -259,56 +259,3 @@
     }
 }
 
-
-/* RESPONSIVO HOME */
-    
-@media (max-width: 940px)
-{
-    .categorias{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-    }
-}
-
-@media (min-width: 450px)
-{
-    .banner-mobile{
-        display: none;
-    }
-}
-
-@media (max-width: 450px)
-{
-    .carousel{
-        display: none;
-    }
-
-    .banner-entrega{
-        display: none;
-    }
-}
-
-
-/* RESPONSIVO AVALIAÇÕES */
-
-@media(max-width:900px)
-{  .clientes{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 30px;
-    justify-content: space-around;
-}
-
-.avaliacoes{
-    margin-left: -48vw;
-}
-}
-
-@media(max-width:416px){
-    .avaliacoes{
-        margin-left: 1vw;
-    }
-}

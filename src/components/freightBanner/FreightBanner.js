@@ -9,7 +9,7 @@ function BannerFreight() {
                 FRETE GRÁTIS + BRINDE PARA COMPRAS ACIMA DE R$500,00
             </div>
 
-            <Header />
+            
             {/*<Footer />*/}
         </>
     )
