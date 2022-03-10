@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import './Card.css';
-import { row , col , button } from 'react-bootstrap'
 import  Heart from './imgs/heart (2).png'
 function Card(props) {
   return (
