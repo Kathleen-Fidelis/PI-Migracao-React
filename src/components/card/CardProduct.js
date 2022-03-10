@@ -15,11 +15,11 @@ function CardProduct(props) {
                             </div>
                             <img src="../paginas/imgs/2.jpg" className={ props.Image } width="215" height="215" />
                             <br />
-                            <div className="nome-produto">Bebê reborn Emilly</div>
+                            <div className="nome-produto">{props.Name}</div>
 
                             <div className="precos">
-                                <div className="preco">R$ 619,00</div>
-                                <div className="parcelado">OU 10X DE R$ 61,90</div>
+                                <div className="preco">R$ {props.price}</div>
+                                <div className="parcelado">OU 10X DE R$ {props.parcel}</div>
                             </div>
 
                             <button type="button" className="comprar"><a href="../paginas/PaginaItem2.html">Comprar</a></button>
