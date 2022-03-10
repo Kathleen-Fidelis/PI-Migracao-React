@@ -4,6 +4,9 @@ import Footer from '../../components/footer/Footer'
 import FreightBanner from '../../components/freightBanner/FreightBanner'
 import ProductBanner from '../../components/productBanner/ProductBanner'
 import Pagination  from '../../components/pagination/Pagination'
+import Card from '../../components/card/Card'
+import CardP from '../../components/card/CardProduct'
+import Product1 from '../../components/card/imgs/heart (2).png'
 
 function Product() {
     return (
@@ -15,7 +18,7 @@ function Product() {
                 <h2>MENINAS</h2>
             </div>
 
-            <div className="cards">
+            {/*<div className="cards">
                 <div className="container-card">
                     <ul className="lista-produtos">
                         <li className="item-produto">
@@ -37,8 +40,13 @@ function Product() {
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>*/}
 
+
+
+            <Card productName="Bebê Reborn Mayara" imgProduct="./imgs/heart (2).png" valueProduct=" R$ 799,00 "  parcel=" Ou 10x sem juros"/>
+           <Card productName="Bebê Reborn Mayara" valueProduct=" R$ 799,00 "  parcel=" Ou 10x sem juros"/>
+           <CardP Image={ Product1 }/>
 
             <Pagination />
             {/*<Footer/>*/}
