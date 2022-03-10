@@ -29,39 +29,3 @@ h3 h4 {
 #BodyPrincipal {
     margin-left: 20px;
 }
-/* Apagar assim que criar o CSS NAV */
-.menu{
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Comfortaa', cursive;
-    background-color: white;
-    
-}
-.garantia{
-    color: rgb(201, 7, 7);
-}
-.menu-a li a, .dropdown-toggle{
-    list-style: none;
-    text-decoration-line: none;
-    color: #E6889A;
-    font-weight: bold;
-}
-
-.menu-a li a:hover{
-    color: grey;
-}
-
-.dropdown-toggle:hover{
-    color:grey;
-}
-
-.dropdown-toggle{
-padding: 0.5rem 1rem;
-text-decoration-line: none;
-}
-.itemCategoria:hover{
-    background-color:white;
-    text-decoration-line: none;
-}
-
-/* apagar assim que possivel */

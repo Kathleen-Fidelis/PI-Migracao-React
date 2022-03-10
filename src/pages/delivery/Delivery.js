@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Delivery.css'
 import Boleto from './imgs/boleto.png'
 import LogoMaster from './imgs/logo-mastercard-4096.png'
@@ -22,28 +22,25 @@ function Delivery(props) {
 
     return (
         <>
-        {/* RESUMO  */}
+        {/* RESUMO 1 */}
+            <div className="res container-fluid">
+                <div className="resumo">
+                    <div className="row">
+                        <div className="col-4 col-md-5">
+                            <strong>Produtos</strong>
+                        </div>
+                        <div className="col-5 col-md-2">
+                            <strong>Quantidade</strong>
+                        </div>
+                        <div className="col-3 col-md-2">
+                            <strong>Valor</strong>
+                        </div>
+                    </div>
 
-         {/* RESUMO */}
-
-    <div className="res container-fluid">
-        <div className="resumo">
-            <div className="row">
-                <div className="col-4 col-md-5">
-                    <strong>Produtos</strong>
-                </div>
-                <div className="col-5 col-md-2">
-                    <strong>Quantidade</strong>
-                </div>
-                <div className="col-3 col-md-2">
-                    <strong>Valor</strong>
                 </div>
             </div>
 
-        </div>
-    </div>
-
-    {/* RESUMO 2 */}
+             {/* RESUMO 2 */}
     <div className=" res container-fluid">
         <div className="resumo2">
             <div className="row">
@@ -80,8 +77,8 @@ function Delivery(props) {
 
      {/* FINAL RESUMO  */}
 
-     {/* ENTREGA  */}
-    <div className="res container-fluid">
+      {/* ENTREGA  */}
+    <div className="res container-fluid col-12">
         <div className=" col-md-4 formEntrega">
 
             <div className="entrega"> <img src={PinLocalizacao} alt=""/>
@@ -193,9 +190,11 @@ function Delivery(props) {
 
             </form>
         </div>
-         {/* FINAL ENTREGA  */}
+       </div>
 
-         {/* PAGAMENTO  */}
+       {/* Final Entrega */}
+
+        {/* PAGAMENTO  */}
         <div className=" col-md-4 formPagamento">
 
             <div className="pagamento1"> <img src={PagamentoCartCred} alt=""/>
@@ -208,7 +207,7 @@ function Delivery(props) {
             <div className="modalCartao">
                 <div className="input-group mb-3">
 
-                        {/* Button trigger modal  */}
+                    {/* Button trigger modal  */}
                     <button type="button" className=" btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#modalCartao">
                         <input type="radio" name="pagamento"/>
@@ -329,10 +328,10 @@ function Delivery(props) {
                     </div>
                 </div>
             </div>
-            {/* FINAL MODAL CARTÃO */}
+             {/* FINAL MODAL CARTÃO */}
 
 
-                {/* MODAL PIX */}
+             {/* MODAL PIX */}
 
             <div className="modalPix">
 
@@ -344,7 +343,7 @@ function Delivery(props) {
                         <input type="radio" name="pagamento"/>
                     </button>
 
-                     {/* Modal */}
+                     {/* Modal  */}
                     <div className="modal fade" id="pix" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div className="modal-dialog">
@@ -452,9 +451,9 @@ function Delivery(props) {
             </div>
              {/* FINAL MODAL BOLETO */}
         </div>
-        {/* FINAL PAGAMENTO */}
+         {/* FINAL PAGAMENTO  */}
 
-        <div className="checkout col-md-4">
+         <div className="checkout col-md-4">
             <div className="resumo1"> <img src={Resumo}/>
                 <strong >Resumo</strong>
                 <hr/>
@@ -469,10 +468,10 @@ function Delivery(props) {
                             </div>
                             <div className="col-9">
                                 <ul type="none">
-                                    <li><strong>{props.nome}</strong></li>
-                                    <li><strong>{props.quantidade}</strong>  1</li>
-                                    <li><strong>{props.valorProduto} </strong>R$ 549,90</li>
-                                    <li><strong>{props.valorFrete} </strong>Grátis</li>
+                                    <li><strong>Bebê Reborn Nicole Pandinha</strong></li>
+                                    <li><strong>Quantidade:</strong>  1</li>
+                                    <li><strong>Valor do produto: </strong>R$ 549,90</li>
+                                    <li><strong>Valor do frete: </strong>Grátis</li>
                                 </ul>
                                 
                             </div>
@@ -551,7 +550,8 @@ function Delivery(props) {
         </div>
 
         
-    </div>
+    
+        
         </>
     )
 }
