@@ -3,13 +3,15 @@
 a{  
     color: white;
     font-weight: bold;
-    text-decoration: none;}
-
-.cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    text-decoration: none;
 }
+
+a:hover{
+    color: rgb(153, 153, 153);
+}
+
+
+
 .container-card{
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +23,7 @@ a{
     padding: 0;
     width: 305px;
     height: 423px;
-    
+    margin-bottom: 10%;
 }
 
 .item-produto {
@@ -94,7 +96,7 @@ a{
 .fav {
     line-height: 30px;
     display: flex;
-   
+    cursor: pointer;
 }
 
 
@@ -113,44 +115,22 @@ a{
 }
 
 
+
+
 .nav ul li {
     color: #E6889A ;
 
 }
 
 
-.paginacao{
-     width: 40px;
-     color: gray;
-     padding: 6px;
-     align-items: center;
+@media (max-width:992px) {
+    .cards{
+        margin-bottom: 10px !important;
+    }
 }
 
-.paginacao:hover {
-    color: black;
-}
 
-.paginacao1 {
-    display: flex;
-    justify-content:center;
-}
 
-.imagemBanner {
-    width: 100%;
-}
-.nomePagina {
-    text-align: center;
-    color: gray;
-    font-family: 'Comfortaa', cursive;
-    padding-top: 24px;
-
-}
-.inputFiltro {
-    margin-left: 35px;
-}
-a:hover {
-    color: gray;
-}
 
 @media (max-width:1236px) {
     .cards{
@@ -161,6 +141,6 @@ a:hover {
         margin-bottom: -45px;
     }
 }
-.imagemBanner {
-    width: 100%;
-}
+
+
+

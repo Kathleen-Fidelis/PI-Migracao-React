@@ -7,6 +7,11 @@ import Profile from './pages/profile/Profile'
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import AssessmentsHome from "./components/assessmentsHome/AssessmentsHome";
+import ForgotPassword from './pages/forgotPassword/ForgotPassword'
+import Register from './pages/register/Register'
+import UpdatePassword from "./pages/updatePassword/UpdatePassword";
+import Assessments from "./pages/assessments/Assessments";
+import MoreDetails from './pages/moreDetails/MoreDetails'
 
 
 export const Routes = () => {
@@ -25,6 +30,11 @@ export const Routes = () => {
             <Route path="/assessmentsHome" component={AssessmentsHome} exact/>
             
 
+            <Route path="/forgotPassword" component={ForgotPassword} />
+            <Route path="/register" component={Register} />
+            <Route path="/updatePassword" component={UpdatePassword} />
+            <Route path="/assessments" component={Assessments} />
+            <Route path="/moreDetails" component={MoreDetails} />
         </Switch>
     )
 }
