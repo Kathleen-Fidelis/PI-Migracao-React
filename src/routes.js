@@ -13,6 +13,10 @@ import UpdatePassword from "./pages/updatePassword/UpdatePassword";
 import Assessments from "./pages/assessments/Assessments";
 import MoreDetails from './pages/moreDetails/MoreDetails'
 
+import Footer from './components/footer/Footer'
+import Contact from './pages/contact us/Contact'
+import SuccessPassword from './pages/success_password/SuccessPassword'
+import Wishlist from "./pages/wishlist/Wishlist";
 
 export const Routes = () => {
     return (
@@ -35,6 +39,14 @@ export const Routes = () => {
             <Route path="/updatePassword" component={UpdatePassword} />
             <Route path="/assessments" component={Assessments} />
             <Route path="/moreDetails" component={MoreDetails} />
+            <Route path="/" component={Home} exact/>
+            <Route path="/product" component={Product} />
+            <Route path="/cart" component={Cart} />
+            <Route path="/Footer" component={Footer} />
+            <Route path="/Contact" component={Contact} />
+            <Route path="/SuccessPassword" component={SuccessPassword} />
+            <Route path="/Wishlist" component={Wishlist}/>
+
         </Switch>
     )
 }

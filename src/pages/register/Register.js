@@ -1,12 +1,18 @@
 import './Register.css'
 import Header from '../../components/header/Header'
+import Freight from '../../components/freightBanner/FreightBanner'
+import Nav from '../../components/nav/Nav'
+
 import Footer from '../../components/footer/Footer'
 import babyCadastro from './imgs/baby-cadastro.png'
 
 function Register() {
     return (
         <>
-            <Header></Header>
+        
+        <Freight />
+            <Header/>
+            <Nav />
             <div className="container-fluid mt-5">
                 <div className="row justify-content-center rowCentralized">
 
@@ -25,7 +31,7 @@ function Register() {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="row justify-content-center">
                                     <h1 className="text-center text-title">Cadastre-se</h1>
                                 </div>

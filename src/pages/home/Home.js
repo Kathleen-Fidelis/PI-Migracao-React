@@ -1,4 +1,5 @@
 import './Home.css'
+
 import Freight from '../../components/freightBanner/FreightBanner'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
@@ -14,6 +15,10 @@ import Emilly from '../product/imgs/arthur.jpg'
 import Bruna from '../product/imgs/bruna.jpg'
 import Bianca from '../product/imgs/bianca1.jpg'
 import Alice from '../../components/card/imgs/samuelMain.jpg'
+
+
+
+
 
 
 
