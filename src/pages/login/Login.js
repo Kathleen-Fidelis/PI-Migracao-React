@@ -1,12 +1,19 @@
 import React from 'react'
 import './Login.css'
+import Nav from '../../components/nav/Nav'
 import babyLogin from './imgs/baby-login.png'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
+
 function Login() {
 
 
 
     return (
       <>
+      <Header/>
+      <Nav/>
         {/*  INÍCIO DO CARD LOGIN  */}
     <div className="container-fluid mt-5">
         <div className="row">
@@ -52,7 +59,7 @@ function Login() {
         </div>
     </div>
 
-        
+        <Footer/>
       </>
     )
 }

@@ -1,5 +1,10 @@
 import React from 'react'
 import './Delivery.css'
+import Nav from '../../components/nav/Nav'
+import CheckoutProduct from '../../components/checkoutProduct/CheckoutProduct'
+import ProductDelivery from '../../components/productDelivery/ProductDelivery'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 import Boleto from './imgs/boleto.png'
 import LogoMaster from './imgs/logo-mastercard-4096.png'
 import LogoAmerican from './imgs/logo-american-express-4096.png'
@@ -18,12 +23,14 @@ import Caminhao from './imgs/caminhao-de-entrega.png'
 
 
 
-function Delivery(props) {
+function Delivery() {
 
     return (
         <>
+         <Header/>
+         <Nav/>
         {/* RESUMO 1 */}
-            <div className="res container-fluid">
+            <div className="res container-fluid delivery">
                 <div className="resumo">
                     <div className="row">
                         <div className="col-4 col-md-5">
@@ -43,11 +50,7 @@ function Delivery(props) {
              {/* RESUMO 2 */}
     <div className=" res container-fluid">
         <div className="resumo2">
-            <div className="row">
-                <div className="col-5 col-md-5"> Bebê Reborn Nicole Pandinha </div>
-                <div className="col-4 col-md-2"> 1 </div>
-                <div className="col-3 col-md-2">R$ 549,90</div>
-            </div>
+        <ProductDelivery name="Bebe Reborn Nicole Pandinha" qtd={1} price="559,90"/>
         </div>
     </div>
 
@@ -459,25 +462,12 @@ function Delivery(props) {
                 <hr/>
             </div>
             <div className="row">
-                <div className="chek col-12">
+                <div className="chek col-11">
                     <h5><strong>Revise e confirme sua compra</strong></h5><hr/>
-                    <div className="row">
-                        <div className="checkoutResumo">
-                            <div className="col-">
-                                <img src={Bebe} width="100%"/>
-                            </div>
-                            <div className="col-9">
-                                <ul type="none">
-                                    <li><strong>Bebê Reborn Nicole Pandinha</strong></li>
-                                    <li><strong>Quantidade:</strong>  1</li>
-                                    <li><strong>Valor do produto: </strong>R$ 549,90</li>
-                                    <li><strong>Valor do frete: </strong>Grátis</li>
-                                </ul>
-                                
-                            </div>
+                    <CheckoutProduct name="Bebe reborn Nicole Pandinha" qtd={1} price="549,90" image={Bebe} deliveryType="Gratis"/>
+                
 
-                        </div>
-                    </div>
+                     
                    
                     <div className="checkoutEntrega">
                         <p>
@@ -550,7 +540,7 @@ function Delivery(props) {
         </div>
 </div>
         
-    
+<Footer/>
         
         </>
     )

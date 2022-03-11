@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './SuccessPurchase.css'
 import ImagemSucesso from './imgs/checked.png'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 
 function SucessPurchase() {
 
@@ -8,6 +10,7 @@ function SucessPurchase() {
 
     return (
         <>
+        <Header/>
         <div className="container-fluid mt-5">
     <div className="row">
       <div className="col-md-12">
@@ -74,6 +77,7 @@ function SucessPurchase() {
         </div>
       </div>
     </div>
+    <Footer/>
         </>
     )
 }

@@ -1,13 +1,18 @@
 import React from 'react'
 import './exchangesReturn'
+import Nav from '../../components/nav/Nav'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 
 function exchangesReturn() {
     return (
         <>
+        <Header/>
+        <Nav/>
             <br />
             <br />
             <br />
-            <div id="BodyPrincipal">
+            <div className="Principal">
                 <h4 className="fw-bold"> Trocas e Devoluções.</h4>
                 <br/>
                 <b className="lh-base bold">Este documento estabelece os procedimentos de Garantia que abr/angem a Política de Troca e Devolução dos produtos adquiridos no site oficial PIMPOLHOS. Sua leitura é indispensável para que o visitante finalize um pedido e conheça as normas fixadas para aproveitar da melhor forma possível a facilidade oferecida através desse website.</b>
@@ -39,6 +44,7 @@ function exchangesReturn() {
 
             {/* FIM DO CONTEUDO DE TERMOS   */}
             <br />
+            <Footer/>
         </>
     )
 }

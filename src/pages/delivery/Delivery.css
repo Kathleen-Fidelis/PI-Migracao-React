@@ -6,6 +6,12 @@
     height: 100%;
     
 }
+.chek {
+    margin: -3px 14px 13px 31px;
+    height: 450px;
+    border: 1px solid #00000036;
+    border-radius: 8px;
+}
 
 /* <!-- RESUMO --> */
 .resumo1 {
@@ -21,7 +27,13 @@
 }
 
 .checkoutEntrega {
-    font-size: 15px;
+    font-size: 12px;
+    
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    height: 20px;
 }
 
 .resumo{
@@ -52,12 +64,12 @@
 .resumo3 li{
     margin-top: 10px;
 }
-.container-fluid {
+.container-fluid .delivery {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .caixaIntEnd {
@@ -113,11 +125,14 @@ form {
 /* <!-- FINAL RESUMO --> */
 .formEntrega{
     background-color: white;
-    width: 30%;
-    height: 735px;
+    width: 33%;
+    height: 736px;
     padding: 20px;
-    height: 100%;
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 10px 17px;
+}
+
+.collapse:not(.show) {
+    display: none;
 }
 .formEntrega form {
     border: 1px solid #00000036;
@@ -127,7 +142,7 @@ form {
 
 .formPagamento {
     background-color: white;
-    width: 40%;
+    width: 32%;
     padding: 20px;
     height: 735px;
     margin: 20px 0px 10px 10px;
@@ -428,7 +443,7 @@ li {
 .checkout {
     background-color: white;
     height: 735px;
-    width: 30%;
+    width: 31%;
     margin: 20px 0px 5px 10px;
 }
 .entrega {
@@ -469,7 +484,7 @@ img {
 }
 
 .chek {
-    margin: 0px 10px 20px 15px;
+    margin: 0px 10px 20px 32px;
     height: 450px;
     border: 1px solid #00000036;
     border-radius: 8px;
