@@ -25,6 +25,7 @@ function Register() {
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div className="row justify-content-center">
                                     <h1 className="text-center text-title">Cadastre-se</h1>
                                 </div>
