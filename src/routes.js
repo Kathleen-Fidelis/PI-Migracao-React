@@ -7,6 +7,7 @@ import Register from './pages/register/Register'
 import UpdatePassword from "./pages/updatePassword/UpdatePassword";
 import Assessments from "./pages/assessments/Assessments";
 import MoreDetails from './pages/moreDetails/MoreDetails'
+import ItemPage from './pages/itemPage/ItemPage'
 
 
 export const Routes = () => {
@@ -20,6 +21,7 @@ export const Routes = () => {
             <Route path="/updatePassword" component={UpdatePassword} />
             <Route path="/assessments" component={Assessments} />
             <Route path="/moreDetails" component={MoreDetails} />
+            <Route path="/itemPage" component={ItemPage} />
         </Switch>
     )
 }
