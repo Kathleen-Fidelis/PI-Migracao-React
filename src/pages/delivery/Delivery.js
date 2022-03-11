@@ -78,7 +78,7 @@ function Delivery(props) {
      {/* FINAL RESUMO  */}
 
       {/* ENTREGA  */}
-    <div className="res container-fluid col-12">
+    <div className="res container-fluid ">
         <div className=" col-md-4 formEntrega">
 
             <div className="entrega"> <img src={PinLocalizacao} alt=""/>
@@ -190,7 +190,7 @@ function Delivery(props) {
 
             </form>
         </div>
-       </div>
+       
 
        {/* Final Entrega */}
 
@@ -548,7 +548,7 @@ function Delivery(props) {
                 </div>
             </div>
         </div>
-
+</div>
         
     
         
