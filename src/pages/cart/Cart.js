@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import './Cart.css'
 import lixeira from './imgs/lixeira.png';
@@ -94,10 +95,23 @@ function Cart(props) {
                 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
                 crossorigin="anonymous"></script>
 
+=======
+import './Cart.css'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
+function Cart() {
+    return (
+        <>
+            <Header/>
+            <h1>Cart</h1>
+            <Footer/>
+>>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
         </>
     )
 }
 
+<<<<<<< HEAD
 {/* <script>
 function id(el) {
     return document.getElementById(el);
@@ -118,4 +132,6 @@ window.onload = function () {
 </script> */}
 
 
+=======
+>>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
 export default Cart
