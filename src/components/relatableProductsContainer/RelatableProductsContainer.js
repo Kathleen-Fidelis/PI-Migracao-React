@@ -11,9 +11,9 @@ import Product4 from '../card/imgs/7.jpg'
 function RelatableProductsContainer(props) {
   return (
     <>
-      <div class="container containerConteudo col-11">
-        <h4 class="nomeBebe">Produtos Relacionados</h4>
-        <div class="row justify-content-evenly">
+      <div className="container containerConteudo col-11">
+        <h4 className="nomeBebe">Produtos Relacionados</h4>
+        <div className="row justify-content-evenly">
 
           <RelatableProduct
             rProductName="Bebê reborn Renata"
