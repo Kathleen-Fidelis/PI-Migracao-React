@@ -49,23 +49,5 @@ function Nav() {
     )
 }
 
-<script>
 
-    {/* function id(el2) {
-    return document.getElementById(el2);
-}
-    window.onload = function () {
-        id('mais2').onclick = function () {
-            id('format2').value = parseInt(id('format2').value) + 1;
-
-
-        }
-    id('menos2').onclick = function () {
-        if (id('format2').value > 0)
-    id('format2').value = parseInt(id('format2').value) - 1;
-
-        
-    }
-} */}
-</script>
 export default Nav

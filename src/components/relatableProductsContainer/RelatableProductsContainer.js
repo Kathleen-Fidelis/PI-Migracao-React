@@ -1,8 +1,5 @@
 import './RelatableProductsContainer.css'
 import RelatableProduct from '../../components/relatableProduct/RelatableProduct'
-
-
-
 import Product1 from '../card/imgs/5.jpg'
 import Product2 from '../card/imgs/4.jpg'
 import Product3 from '../card/imgs/6.jpg'

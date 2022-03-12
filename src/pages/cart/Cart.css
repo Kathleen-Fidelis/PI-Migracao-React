@@ -15,7 +15,7 @@ body{
         margin-top: -17px;
         margin-bottom: -1px;
         padding-top: 35px;
-        padding-bottom: 26px;
+        
     }
     
     .sub{
@@ -34,8 +34,10 @@ body{
         list-style: none;
         justify-content: space-between;
         color: black;
-        padding-right: 25px;
-        padding-left: 12px;
+        padding-right: 27px;
+        padding-left: 3px;
+        
+        
     
     }
     
@@ -57,10 +59,15 @@ body{
         justify-content: space-between;
         font-size: 19px;
         padding-top: 21px;
+        margin-top: -16px;
     }
     
     .descricao-produto, .sub-preco, .qtd, .sub-total, .lixeira{
         margin-top: 30px;
+    }
+
+    .qtd{
+        height: 20px;
     }
     
     .cal-frete{
@@ -117,8 +124,14 @@ body{
     .botao-comprar{
         display: flex;
         justify-content: flex-end;
+        margin-bottom: 10vh;
     }
     
+    .campo-cep{
+        height: 16vh;
+        width: 84vh;
+
+    }
     .produtos-relacionados{
         font-weight: bold;
         font-size: 20px;
@@ -139,6 +152,9 @@ body{
         border-radius: 6px;
         background-color: white;
         border-style: solid;
+        height: 27px;
+        margin-top: 10px;
+        padding-bottom: 10px;
     }
     
     .subtrair{
@@ -146,6 +162,7 @@ body{
         border-radius: 6px;
         background-color: white;
         border-style: solid;
+        height: 27px;
     }
     
     .campo-qtd{
@@ -155,122 +172,10 @@ body{
         margin-left: 5px;
         margin-right: 5px;
         border-style: solid;
+        height: 27px;
     }
 
-    /* CARDS PRODUTOS RELACIONADOS, MENOR QUE OS CARDS COMUNS
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Mono:wght@200;300&display=swap');
-
-.cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.container-card{
-    flex-direction: row;
-    justify-content: space-between;
-    display: flex;
-}
-
-.lista-produtos {
-    list-style: none;
-    padding: 0;
-    width: 251px;
-    height: 347px;
-    border-color: black;
-}
     
-
-
-.item-produto {
-    
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    margin: 5px 10px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 4px;
-    border: 1px solid rgb(216, 216, 216);
-    box-shadow: 0 2px 2px 0 grey;
-}
-
-.item-produto:hover {
-    box-shadow: 0 1px 7px 0 grey;
-    transition: color .7s;
-}
-
-.imagem-produto{
-    display: flex;
-    justify-content: center;
-    margin-left: 22px;
-}
-
-
-.nome-produto {
-   display: flex;
-    justify-content: center;
-    height: 36px;
-    margin: 0 0 7px;
-    color: #E6889A ;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    margin-top: 10px;
-   
-    
-}
-
-.preco {
-    display: flex;
-    margin-top:-22px;
-    font-size:20px;
-    font-weight: 700;
-    color:rgb(165, 165, 165);
-    line-height: 24px;
-    justify-content: center;
-    text-decoration: none;
-   
-}
-
-.parcelado {
-    display: flex;
-    color: rgb(206, 206, 206);
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    justify-content: center;
-
-}
-
-.fav {
-    line-height: 30px;
-    display: flex;
-   
-}
-
-
-
-.comprar {
-    background-color: #9CF38E;
-    border-radius: 13px; 
-    border: none;
-    width: 127px;
-    color: white;
-    margin-left: 44px;
-    margin-top: 10px;
-}
-
-
-.mais-vendidos{
-    color:#E6889A;
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 17px;
-} */
-
     /* RESPONSIVO */
 
 
@@ -278,11 +183,45 @@ body{
 {
     .botao-comprar{
         display: flex;
-        justify-content: column;
+       justify-content: center;
     }
 }
+
+@media(max-width: 791px)
+{
+    .botao-comprar{
+         flex-direction: row;
+       justify-content: center;
+    }
+}
+
+@media(max-width: 766px)
+{
+    .botao-comprar{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+}
+
 @media(max-width: 700px)
 {
+    .botao-comprar{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+
+.btn-finalizar, .btn-continuar {
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    width: 287px;
+}
+
     .sub-produto{
         display: flex;
         flex-direction: column;
@@ -293,6 +232,8 @@ body{
         padding-right: 25px;
         padding-left: 12px;
         align-content: center;
+
+        
     
     }
 }

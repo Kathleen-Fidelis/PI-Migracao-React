@@ -7,13 +7,10 @@
     max-width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .navbar-toggler-icon{
     background-image: url(./imgs//menu-maior.png);
 }
 
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
 .container-fluid{
     padding: 0;
 }
@@ -62,8 +59,6 @@
     font-size: 18px;
 }
 
-<<<<<<< HEAD
-=======
 .login-cadatro p a{
     text-align: center;
     margin-right: 10px;
@@ -72,16 +67,12 @@
     text-decoration: none;
 }
 
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
 .login-cadatro p {
     text-align: center;
     margin-right: 10px;
     padding-bottom: 5px;
     color: white;
-<<<<<<< HEAD
-=======
     text-decoration: none;
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
 }
 
 .login-cadatro p a:hover{
@@ -116,16 +107,11 @@
     margin-right: 30px;
 }
 
-.navbar-toggler{
-    /* border: 1px solid gray;
-    background-color: gray; */
-<<<<<<< HEAD
-    border: 1px solid #ff00814a;
-    background-color: #ff00814a;
-=======
+/* .navbar-toggler{
+    border: 1px solid gray;
+    background-color: gray; */ 
     /*border: 1px solid #ff00814a;
-    background-color: #ff00814a;*/
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
+    background-color: #ff00814a;
 }
 
 /* .navbar-toggler-icon{
@@ -137,7 +123,6 @@
     background-color: #E6889A;
 }
 
-<<<<<<< HEAD
 
 
 /* frete gratis */
@@ -290,37 +275,10 @@ text-decoration-line: none;
 
 .img-cat{
     border-radius: 80px;    
-=======
-button:focus:not(:focus-visible) {
-    outline: 0;
-    color: #ff00814a;
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
 }
 
 
 
-<<<<<<< HEAD
-/* @media screen {
-    
- .navbar-toggler{
-    border: 1px solid gray;
-    background-color: gray;
-    border: 1px solid #ff00814a;
-    background-color: #ff00814a;
-} */
-
-/* .navbar-toggler-icon{
-    background-color: blanchedalmond;
-}  */
-
-/* .navbar-collapse{
-    flex-grow: 0;
-    background-color: #E6889A;
-}
-} */
-
-=======
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
 @media (max-width: 992px){ 
     *{
         max-width: 100%;
@@ -371,13 +329,10 @@ button:focus:not(:focus-visible) {
     .logo{
         height: 100px;
     }
-<<<<<<< HEAD
-=======
 
     .navbar-toggler{
         margin-right: 3%;
     }
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
      
  }
 
@@ -464,7 +419,6 @@ button:focus:not(:focus-visible) {
     }
 }
 
-<<<<<<< HEAD
 
 /* RESPONSIVO HOME */
     
@@ -518,5 +472,3 @@ button:focus:not(:focus-visible) {
         margin-left: 1vw;
     }
 }
-=======
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1

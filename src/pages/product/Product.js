@@ -1,8 +1,6 @@
 import './Product.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-<<<<<<< HEAD
-=======
 import FreightBanner from '../../components/freightBanner/FreightBanner'
 import ProductBanner from '../../components/productBanner/ProductBanner'
 import Pagination  from '../../components/pagination/Pagination'
@@ -15,16 +13,10 @@ import mayara from './imgs/mayara.jpg'
 import renata from './imgs/renata.jpg'
 import joelma from './imgs/joelma.jpg'
 import camila from './imgs/camila.jpg'
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
 
 function Product() {
     return (
         <>
-<<<<<<< HEAD
-            <Header/>
-           <h1>Product</h1> 
-           <Footer/>
-=======
            <FreightBanner />
             <Header />
             <ProductBanner />
@@ -50,7 +42,6 @@ function Product() {
 
             <Pagination />
             <Footer/>
->>>>>>> c48a26cc988165996ff5634b9fd6aa45a23944c1
         </>
     )
 }

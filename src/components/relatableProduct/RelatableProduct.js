@@ -14,7 +14,7 @@ function RelatableProduct (props) {
 
 
 <div class="row justify-content-evenly">
-  <a class="col-10"><img src={props.image} alt="" class="responsive" width="25" height="25"/></a>
+  <a class="col-10"><img src={props.image} alt="" class="responsive" /></a>
 </div>
 
 
