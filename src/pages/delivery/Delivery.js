@@ -19,6 +19,7 @@ import TresPontos from './imgs/mais-tres-pontos-indicador.png'
 import PagamentoCartCred from './imgs/pagamento-com-cartao-de-credito(1).png'
 import Resumo from './imgs/resumo.png'
 import Bebe from './imgs/bebe2.jpg'
+import BannerFreight from '../../components/bannerFreight/BannerFreight'
 import Caminhao from './imgs/caminhao-de-entrega.png'
 
 
@@ -27,6 +28,7 @@ function Delivery() {
 
     return (
         <>
+        <BannerFreight/>
          <Header/>
          <Nav/>
         {/* RESUMO 1 */}

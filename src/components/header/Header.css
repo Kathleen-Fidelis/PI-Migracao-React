@@ -15,6 +15,7 @@
     padding: 0;
 }
 
+
 .custom-nav{
     background-color: #E6889A;
     height: 90px;
@@ -85,11 +86,12 @@
     color: white;
 }
 
-.custom-btn{
+.custom-btn cart{
     margin-left: 100px;
     background-color: #9ACCFF;
     width: 149px;
     height: 37px;
+    
 }
 
 .cart ::before {
@@ -107,16 +109,7 @@
     margin-right: 30px;
 }
 
-.navbar-toggler{
-    /* border: 1px solid gray;
-    background-color: gray; */
-    /*border: 1px solid #ff00814a;
-    background-color: #ff00814a;*/
-}
 
-/* .navbar-toggler-icon{
-    background-color: blanchedalmond;
-}  */
 
 .navbar-collapse{
     flex-grow: 0;

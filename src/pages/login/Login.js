@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import BannerFreight from '../../components/bannerFreight/BannerFreight'
 import Nav from '../../components/nav/Nav'
 import babyLogin from './imgs/baby-login.png'
 import Header from '../../components/header/Header'
@@ -12,6 +13,7 @@ function Login() {
 
     return (
       <>
+      <BannerFreight/>
       <Header/>
       <Nav/>
         {/*  INÍCIO DO CARD LOGIN  */}

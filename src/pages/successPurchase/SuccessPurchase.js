@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './SuccessPurchase.css'
+import Nav from '../../components/nav/Nav'
+import BannerFreight from '../../components/bannerFreight/BannerFreight'
 import ImagemSucesso from './imgs/checked.png'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
@@ -10,7 +12,9 @@ function SucessPurchase() {
 
     return (
         <>
+        <BannerFreight/>
         <Header/>
+        <Nav/>
         <div className="container-fluid mt-5">
     <div className="row">
       <div className="col-md-12">
@@ -23,7 +27,7 @@ function SucessPurchase() {
 
               <div className="col-md-10">
               <div className="p-sucesso">
-                <p className="p-sucesso-title">
+                <p className="p-sucesso-title p">
                     Compra realizada com sucesso!!
                 </p >
 

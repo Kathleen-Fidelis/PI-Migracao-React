@@ -3,10 +3,11 @@
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Comfortaa', cursive;
     max-width: 100%;
+    
 }
 
 body{
-    background-color: #ffcedf8f;
+    background-color: white;
 }
 
 .user-login{

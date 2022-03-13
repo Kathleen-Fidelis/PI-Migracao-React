@@ -11,6 +11,9 @@ hr{
 }
 .p-sucesso-title{
     text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+    margin-left: 10px;
 }
 .custom-button{
     background-color: #9ACCFF;
