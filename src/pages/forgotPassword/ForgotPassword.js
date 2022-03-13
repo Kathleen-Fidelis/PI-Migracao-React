@@ -1,7 +1,6 @@
 import './ForgotPassword.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
-
 function ForgotPassword() {
     return (
         <>
@@ -16,7 +15,7 @@ function ForgotPassword() {
 
                                 <div className="row justify-content-center ">
 
-                                
+
                                     <h1 className="text-center text-title mt-3">Esqueci Minha Senha</h1>
                                   </div>
                                        <div className="row justify-content-center">
@@ -45,17 +44,26 @@ function ForgotPassword() {
 
                                     </div>
 
-                                
+
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-        
+
         {/*<Footer></Footer>*/ }
         </>
     )
 }
 
+    
+          
+            
+    
+
+          
+    
+    
+  
 export default ForgotPassword

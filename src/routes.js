@@ -4,19 +4,18 @@ import Product from './pages/product/Product'
 import Cart from './pages/cart/Cart'
 import ItemPage from './pages/itemPage/ItemPage'
 import Profile from './pages/profile/Profile'
-import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import AssessmentsHome from "./components/assessmentsHome/AssessmentsHome";
+import Contact from './pages/contact us/Contact'
+import SuccessPassword from './pages/success_password/SuccessPassword'
+import Wishlist from "./pages/wishlist/Wishlist";
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 import Register from './pages/register/Register'
 import UpdatePassword from "./pages/updatePassword/UpdatePassword";
 import Assessments from "./pages/assessments/Assessments";
 import MoreDetails from './pages/moreDetails/MoreDetails'
 
-import Footer from './components/footer/Footer'
-import Contact from './pages/contact us/Contact'
-import SuccessPassword from './pages/success_password/SuccessPassword'
-import Wishlist from "./pages/wishlist/Wishlist";
+
 
 export const Routes = () => {
     return (
@@ -26,8 +25,6 @@ export const Routes = () => {
             <Route path="/cart" component={Cart} />
             <Route path="/itemPage" component={ItemPage} />
             <Route path="/profile" component={Profile} />
-            <Route path="/" component={Home} exact/>
-            <Route path="/header" component={Header} exact/>
             <Route path="/product" component={Product} />
             <Route path="/cart" component={Cart} />
             <Route path="/nav" component={Nav} exact/>
@@ -42,7 +39,6 @@ export const Routes = () => {
             <Route path="/" component={Home} exact/>
             <Route path="/product" component={Product} />
             <Route path="/cart" component={Cart} />
-            <Route path="/Footer" component={Footer} />
             <Route path="/Contact" component={Contact} />
             <Route path="/SuccessPassword" component={SuccessPassword} />
             <Route path="/Wishlist" component={Wishlist}/>

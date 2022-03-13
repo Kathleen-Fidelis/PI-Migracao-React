@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Mono:wght@200;300&display=swap');
-
 *{
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Comfortaa', cursive;
 }
-
 body{
     background-color: #ffcedf8f;
 }
@@ -16,6 +14,16 @@ body{
 }
 
 .custom-button{
+
+    
+        
+          
+    
+
+        
+    
+    
+  
     background-color: #9ACCFF;
     width: 210px;
     color: white;
@@ -53,14 +61,22 @@ body{
 }
 
 .custom-input input{
+
+    
+        
+          
+    
+
+        
+    
+   
+  
     font-size: 12px;
 }
-
 .custom-input label{    /* ADICIONEI */
     font-weight: bold;
     color: #626262;
 }
-
 .custom-input input::placeholder{   /* ADICIONEI */
     color: black;
 }
@@ -69,26 +85,32 @@ body{
 
 
 @media (max-width: 767px){ 
-    
 
-    
+
+
 
     .custom-input{
         display: block !important;
-    }
 
+    
+          
+            
+    
+
+          
+    
+    
+  
+    }
     .input-login{
         margin: 0px;
     }
-
     .input-media{   /* CRIEI ESSA CLASSE NO HTML */
         margin-top: 15px;
     }
-
     .user-cadastro{
         left: 154px;
     }
-
     hr{
         width: 285px;
         margin-left: 28px;
