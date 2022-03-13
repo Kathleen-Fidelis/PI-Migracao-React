@@ -2,7 +2,7 @@ import './RelatableProductsContainer.css'
 import RelatableProduct from '../../components/relatableProduct/RelatableProduct'
 import Product1 from '../../pages/product/imgs/renata.jpg'
 import Product2 from '../../pages/product/imgs/mayara.jpg'
-import Product3 from '../../pages/product/imgs/camila.jpg'
+import Product3 from '../../pages/product/imgs/joelma.jpg'
 import Product4 from '../../pages/product/imgs/camila.jpg'
 function RelatableProductsContainer(props) {
   return (
@@ -12,7 +12,17 @@ function RelatableProductsContainer(props) {
         <div className="row justify-content-evenly">
 
           <RelatableProduct
-            rProductName="Bebê Reborn Renata"
+            rProductName="Bebê reborn Renata"
+
+    
+          
+            
+    
+
+          
+    
+    
+  
             rProductPrice="659,00"
             rProductParcel="65,90"
             image={Product1} />

@@ -8,10 +8,10 @@ import RelatableContainer from '../../components/relatableProductsContainer/Rela
 import Nav from '../../components/nav/Nav'
 
 
-import MainImage from '../../pages/product/imgs/arthur.jpg'
-import MiniImg1 from '../../pages/product/imgs/arthur2.png'
-import MiniImg2 from '../../pages/product/imgs/detalheArthur.png'
-import MiniImg3 from '../../pages/product/imgs/detalheBanheiraArthur.png'
+import MainImage from '../../pages/product/imgs/camila.jpg'
+import MiniImg1 from '../../pages/product/imgs/camila.jpg'
+import MiniImg2 from '../../pages/product/imgs/camila.jpg'
+import MiniImg3 from '../../pages/product/imgs/camila.jpg'
 
 
 
@@ -19,7 +19,9 @@ function ItemPage() {
     return (
         <>
 
-            
+            <Freight />
+            <Header />
+            <Nav />
             <InfoMain
                 nameProduct="Bebê Reborn Arthur"
                 MainImg={MainImage}
@@ -41,7 +43,7 @@ function ItemPage() {
             <br />
             <RelatableContainer>
             </RelatableContainer>
-          
+            <Footer />
         </>
     )
 }

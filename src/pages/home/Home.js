@@ -40,12 +40,7 @@ function Home() {
                 <CardP Image={ Bianca } Name="Bebê Reborn Bianca" price="599" parcel="59,90"/>
                 <CardP Image={ Alice } Name="Bebê Reborn Alice" price="659" parcel="65,90"/>
             </div>
-            <div className="cards">
-                <CardP Image={ Emilly } Name="Bebê Reborn Emilly" price="619" parcel="61,90"/>
-                <CardP Image={ Bruna } Name="Bebê Reborn Bruna" price="499" parcel="49,90"/>
-                <CardP Image={ Bianca } Name="Bebê Reborn Bianca" price="599" parcel="59,90"/>
-                <CardP Image={ Alice } Name="Bebê Reborn Alice" price="659" parcel="65,90"/>
-            </div>
+         
             <Avaliation/>
             <Footer />
         </>
