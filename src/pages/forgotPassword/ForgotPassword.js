@@ -15,7 +15,6 @@ function ForgotPassword() {
 
                                 <div className="row justify-content-center ">
 
-
                                     <h1 className="text-center text-title mt-3">Esqueci Minha Senha</h1>
                                   </div>
                                        <div className="row justify-content-center">
@@ -38,12 +37,11 @@ function ForgotPassword() {
 
                                         <div className="d-flex justify-content-center">
                                             <a href="../login/index.html"><button className="custom-button-cancelar">
-                                                <p>Cancelar</p>
+                                                Cancelar
                                             </button></a>
                                         </div>
 
                                     </div>
-
 
                             </div>
                         </div>
@@ -51,8 +49,7 @@ function ForgotPassword() {
                     </div>
                 </div>
             </div>
-
-        {/*<Footer></Footer>*/ }
+        <Footer/>
         </>
     )
 }

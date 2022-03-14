@@ -184,7 +184,7 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 767px){ 
     .custom-form input{
-        width: 350px;
+        width: 75%;
         margin-left: 20px;
     }
  

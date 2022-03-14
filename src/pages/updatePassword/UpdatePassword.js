@@ -20,7 +20,6 @@ function UpdatePassword() {
                                     <h1 class="text-center text-title mt-3">Atualizar Senha</h1>
                                 </div>
 
-
                                     <div class="card card-input mb-4">
                                         <div class="form-group font-weight-bold mb-3 mt-3  col-10 custom-input">
                                             <label class="mb-2" for="usuario">Nova Senha:</label>
@@ -60,7 +59,7 @@ function UpdatePassword() {
 
                 </div>
             </div>
-            {/*<Footer />*/}
+            <Footer />
         </>
     )
 }

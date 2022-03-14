@@ -31,7 +31,6 @@ function Home() {
             <Categories/>
             <p className="destaques"> PRODUTOS EM DESTAQUE </p>
             <div className="cards">
-
                 <CardP Image={ Bruna } Name="Bebê Reborn Bruna" price="499" parcel="49,90"/>
                 <CardP Image={ Emilly } Name="Bebê Reborn Arthur" price="499" parcel="49,90"/>
                 <CardP Image={ Bianca } Name="Bebê Reborn Bianca" price="599" parcel="59,90"/>

@@ -1,11 +1,15 @@
 import './Contact.css'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Nav  from '../../components/nav/Nav';
+import FreightBanner from '../../components/freightBanner/FreightBanner';
 
 function Contact() {
     return (
         <>
-            <Header />
+            <FreightBanner />
+            <Header/>
+            <Nav/>
 
             <div className="container-fluid mt-5">
                 <div className="row">
@@ -108,9 +112,9 @@ function Contact() {
                     </div>
                 </div>
             </div>
-
-            <Footer />
-
+                
+            <Footer/>   
+                
         </>
     );
 }

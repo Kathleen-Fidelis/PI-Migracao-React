@@ -9,12 +9,17 @@ import AssessmentsHome from "./components/assessmentsHome/AssessmentsHome";
 import Contact from './pages/contact us/Contact'
 import SuccessPassword from './pages/success_password/SuccessPassword'
 import Wishlist from "./pages/wishlist/Wishlist";
+
+
+
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 import Register from './pages/register/Register'
 import UpdatePassword from "./pages/updatePassword/UpdatePassword";
 import Assessments from "./pages/assessments/Assessments";
-import MoreDetails from './pages/moreDetails/MoreDetails'
-
+import MoreDetails from './components/moreDetails/MoreDetails'
+import Delivery from './pages/delivery/Delivery'
+import ExchangesReturn from './pages/exchangesReturn/exchangesReturn'
+import Login from './pages/login/Login'
 
 
 export const Routes = () => {
@@ -29,8 +34,6 @@ export const Routes = () => {
             <Route path="/cart" component={Cart} />
             <Route path="/nav" component={Nav} exact/>
             <Route path="/assessmentsHome" component={AssessmentsHome} exact/>
-            
-
             <Route path="/forgotPassword" component={ForgotPassword} />
             <Route path="/register" component={Register} />
             <Route path="/updatePassword" component={UpdatePassword} />
@@ -42,7 +45,9 @@ export const Routes = () => {
             <Route path="/Contact" component={Contact} />
             <Route path="/SuccessPassword" component={SuccessPassword} />
             <Route path="/Wishlist" component={Wishlist}/>
-
+            <Route path="/delivery" component={Delivery} />
+            <Route path="/exchangesReturn" component={ExchangesReturn} />
+            <Route path="/login" component={Login} />
         </Switch>
     )
 }

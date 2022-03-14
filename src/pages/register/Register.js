@@ -68,7 +68,7 @@ function Register() {
                     </div>
                 </div>
             </div>
-            {/*<Footer/>*/}
+            <Footer/>
         </>
     )
 }
