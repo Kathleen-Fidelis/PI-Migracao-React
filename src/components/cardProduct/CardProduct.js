@@ -22,7 +22,7 @@ function CardProduct(props) {
                                 <div className="parcelado">OU 10X DE R$ {props.parcel}</div>
                             </div>
 
-                            <button type="button" className="comprar"><Link to="../paginas/PaginaItem2.html">Comprar</Link></button>
+                            <button type="button" className="comprar"><Link to="/itemPage">Comprar</Link></button>
 
                         </li>
                     </ul>

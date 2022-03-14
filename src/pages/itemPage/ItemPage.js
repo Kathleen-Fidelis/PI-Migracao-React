@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom'
 import Freight from '../../components/freightBanner/FreightBanner'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Nav from '../../components/nav/Nav'
+import RelatableContainer from '../../components/relatableProductsContainer/RelatableProductsContainer'
 import InfoMain from '../../components/productInfoMain/ProductInfoMain'
 import Description from '../../components/productInfoDescription/ProductInfoDescription'
-import RelatableContainer from '../../components/relatableProductsContainer/RelatableProductsContainer'
-import Nav from '../../components/nav/Nav'
+
+
 
 
 import MainImage from '../../pages/product/imgs/camila.jpg'

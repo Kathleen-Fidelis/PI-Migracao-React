@@ -11,7 +11,7 @@ import SuccessPassword from './pages/success_password/SuccessPassword'
 import Wishlist from "./pages/wishlist/Wishlist";
 
 
-
+import MyAccount from './pages/myAccount/MyAccount'
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 import Register from './pages/register/Register'
 import UpdatePassword from "./pages/updatePassword/UpdatePassword";
@@ -48,6 +48,7 @@ export const Routes = () => {
             <Route path="/delivery" component={Delivery} />
             <Route path="/exchangesReturn" component={ExchangesReturn} />
             <Route path="/login" component={Login} />
+            <Route path="/myAccount" component={MyAccount} />
         </Switch>
     )
 }

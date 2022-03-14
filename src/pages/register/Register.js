@@ -1,11 +1,15 @@
 import './Register.css'
+import Freight from '../../components/freightBanner/FreightBanner'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Nav from '../../components/nav/Nav'
 import babyCadastro from './imgs/baby-cadastro.png'
 function Register() {
     return (
         <>
+        <Freight/>
             <Header></Header>
+            <Nav/>
             <div className="container-fluid mt-5">
                 <div className="row justify-content-center rowCentralized">
                     <div className="card border-card col-11 col-md-10 col-lg-6">
@@ -25,7 +29,7 @@ function Register() {
                                 <div className="card card-input mb-4">
                                     <div className="form-group col-11 font-weight-bold mb-2 mt-3 custom-input">
                                         <label className="mb-2" for="usuario">Nome completo:</label>
-                                        <input className="form-control" type="text" placeholder="Insira o e-mail" />
+                                        <input className="form-control" type="text" placeholder="Insira o nome" />
                                     </div>
                                     <div className="col-11">
                                         <div className="row custom-input ">

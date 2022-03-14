@@ -4,7 +4,7 @@ import './Cart.css'
 import doll1 from '../cart/img/alice.jpg'
 import doll2 from '../cart/img/gabi.jpg'
 import Header from '../../components/header/Header'
-import ItemCart from '../../components/itemCart/ItemCart'
+import ItemCart from '../../components/itemCart/itemCart'
 import Footer from "../../components/footer/Footer";
 import RelatableProductsContainer from "../../components/relatableProductsContainer/RelatableProductsContainer"
 function Cart(props) {

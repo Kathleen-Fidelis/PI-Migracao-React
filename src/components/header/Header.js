@@ -11,7 +11,7 @@ function Header(props) {
                     <nav className="navbar navbar-expand-lg custom-nav">
                         <div className="container-fluid">
                             
-                        <Link to="../header/index.html"><img src={logo} alt="Logo" className='logo'/></Link>
+                        <Link to="/"><img src={logo} alt="Logo" className='logo'/></Link>
                         
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@ function Header(props) {
 
                                 <span className="login-cadatro ">
                                 <img src={user} alt="User" className='icone'/> 
-                                    <p><Link to="../login/index.html"> login ou</Link>  <br/><Link to="../cadastro/index.html">cadastre-se</Link></p>
+                                    <p><Link to="../login"> login ou</Link>  <br/><Link to="../register">cadastre-se</Link></p>
                                 </span>
                             </div>
                         </div>
