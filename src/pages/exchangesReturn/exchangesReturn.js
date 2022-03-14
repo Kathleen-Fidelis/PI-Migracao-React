@@ -1,5 +1,5 @@
 import React from 'react'
-import './termos.css'
+import './exchangesReturn.css'
 import BannerFreight from '../../components/bannerFreight/BannerFreight'
 import Nav from '../../components/nav/Nav'
 import Header from '../../components/header/Header'
@@ -38,7 +38,7 @@ function exchangesReturn() {
                 <p className="lh-base bold">2.1.3 A PIMPOLHOS terá o prazo de até 10 (dez) dias úteis, após a confirmação do recebimento do(s) produto(s) em seu Centro Administrativo em São Paulo para analisar o pedido de devolução e, ocorrendo o preenchimento dos requisitos apresentados anteriormente, a compra será cancelada e os valores pagos serão restituídos ao cliente, na mesma modalidade em que foi efetuado o pagamento.</p>
                 <br />
                 <br />
-                <p className="text-start">Atualização: 26 de Dezembr/o de 2021</p>
+                <p className="text-start">Atualização: 26 de Dezembro de 2021</p>
                 <br />
                 <p className="text-start">PIMPOLHOS</p>
 

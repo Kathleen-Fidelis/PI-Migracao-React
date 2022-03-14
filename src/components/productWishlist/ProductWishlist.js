@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom'
 import './ProductWishlist.css';
-import Heart from './imgs/heart (2).png'
+import lixeira from '../productWishlist/imgWhish/lixeira.png'
+
 function ProductWishlist(props) {
   return (
-
     <>
       <div className="cardContent">
         <div className="produtoFav">
           <div className="col-md-2 col-8 ">
-            <img src={bebe1} width="75%" />
+            <img src={ props.image } width="75%" />
           </div>
           <div className="col-sm-10 col-lg-5">
             <ul type="none">
-              <li className="nomeBB"><strong>Bebê Reborn Guilherme</strong></li>
-              <li className="cod">CÓDIGO: S48002</li><br />
-              <li><strong>R$549,00</strong></li>
+              <li className="nomeBB"><strong>{ props.name }</strong></li>
+              <li className="cod">CÓDIGO: { props.codigo }</li><br />
+              <li><strong>R$ { props.valor }</strong></li>
             </ul>
           </div>
           <div className=" lixeiraBtnAdd">

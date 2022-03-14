@@ -57,10 +57,13 @@ function Nav() {
     window.onload = function () {
         id('mais2').onclick = function () {
             id('format2').value = parseInt(id('format2').value) + 1;
+
+
         }
     id('menos2').onclick = function () {
         if (id('format2').value > 0)
     id('format2').value = parseInt(id('format2').value) - 1;
+
         
     }
 } */}

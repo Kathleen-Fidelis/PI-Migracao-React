@@ -14,11 +14,10 @@ import renata from './imgs/renata.jpg'
 import joelma from './imgs/joelma.jpg'
 import camila from './imgs/camila.jpg'
 
-
-function Product(props) {
+function Product() {
     return (
         <>
-            <FreightBanner />
+           <FreightBanner />
             <Header />
             <ProductBanner />
             

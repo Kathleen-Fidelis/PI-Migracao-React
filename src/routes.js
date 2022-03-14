@@ -6,33 +6,41 @@ import Login from './pages/login/Login'
 import SuccessPurchase from './pages/successPurchase/SuccessPurchase'
 import Delivery from './pages/delivery/Delivery'
 import Cart from './pages/cart/Cart'
+import Profile from './pages/profile/Profile'
+import Nav from "./components/nav/Nav"
+import AssessmentsHome from "./components/assessmentsHome/AssessmentsHome"
+import Contact from './pages/contact us/Contact'
+import SuccessPassword from './pages/success_password/SuccessPassword'
+import Wishlist from "./pages/wishlist/Wishlist"
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 import Register from './pages/register/Register'
-import UpdatePassword from "./pages/updatePassword/UpdatePassword";
-import Assessments from "./pages/assessments/Assessments";
+import UpdatePassword from "./pages/updatePassword/UpdatePassword"
+import Assessments from "./pages/assessments/Assessments"
 import MoreDetails from './pages/moreDetails/MoreDetails'
 import ItemPage from './pages/itemPage/ItemPage'
-
-
 
 export const Routes = () => {
     return (
         <Switch>
             <Route path="/" component={Home} exact/>
             <Route path="/product" component={Product} />
-            <Route path="/cart" component={Cart} />
             <Route path="/exchangesReturn" component={ExchangesReturn} />
             <Route path="/login" component={Login} />
-            <Route path="/successPurchase" component={SuccessPurchase} />
-            <Route path="/delivery" component={Delivery} />
-            <Route path="/forgotPassword" component={ForgotPassword} />
-            <Route path="/register" component={Register} />
-            <Route path="/updatePassword" component={UpdatePassword} />
-            <Route path="/assessments" component={Assessments} />
-            <Route path="/moreDetails" component={MoreDetails} />
-            <Route path="/itemPage" component={ItemPage} />
-            
-
+            <Route path="/successPurchase" component={SuccessPurchase}/>
+            <Route path="/delivery" component={Delivery} />          
+            <Route path="/itemPage" component={ItemPage}/>
+            <Route path="/profile" component={Profile}/>
+            <Route path="/cart" component={Cart}/>
+            <Route path="/nav" component={Nav} exact/>
+            <Route path="/assessmentsHome" component={AssessmentsHome} exact/>
+            <Route path="/forgotPassword" component={ForgotPassword}/>
+            <Route path="/register" component={Register}/>
+            <Route path="/updatePassword" component={UpdatePassword}/>
+            <Route path="/assessments" component={Assessments}/>
+            <Route path="/moreDetails" component={MoreDetails}/>
+            <Route path="/Contact" component={Contact} />
+            <Route path="/SuccessPassword" component={SuccessPassword} />
+            <Route path="/Wishlist" component={Wishlist}/>
         </Switch>
     )
 }
