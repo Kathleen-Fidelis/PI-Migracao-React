@@ -1,17 +1,22 @@
 import Assessments from '../../components/assessments/Assessments'
 import MoreDetails from '../../components/myRequests/MyRequests'
-import Wishlist from '../../components/wishlist/Wishlist'
+import Wishlist from '../wishlist/Wishlist'
 import './Profile.css'
 import user from './imgs/user.png'
 import checklist from './imgs/checklist.png'
 import desejos from './imgs/desejos.png'
+import BannerFreight from '../../components/freightBanner/FreightBanner'
+import Nav from '../../components/nav/Nav'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+ import MyAccount from '../myAccount/MyAccount'
 
 function Profile() {
     return (
         <>
+           <BannerFreight/>
         <Header />
+        <Nav/>
             <div className="container container-profile navtabContainer">
 
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
@@ -60,7 +65,8 @@ function Profile() {
              {/* <!-- INICIO DO CONTEUDO NAV/TAB --> */}
                     <Assessments />
                     <MoreDetails />
-                   
+                   <MyAccount/>
+                   <Wishlist/>
 
             
             </div>

@@ -3,14 +3,20 @@ import './Cart.css'
 // import lixeira from '../../imgs/lixeira.png';
 import doll1 from '../cart/img/alice.jpg'
 import doll2 from '../cart/img/gabi.jpg'
+import BannerFreight from '../../components/freightBanner/FreightBanner'
+import Nav from '../../components/nav/Nav'
 import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+
 import ItemCart from '../../components/itemCart/itemCart'
-import Footer from "../../components/footer/Footer";
+
 import RelatableProductsContainer from "../../components/relatableProductsContainer/RelatableProductsContainer"
 function Cart(props) {
     return (
         <>
+        <BannerFreight/>
             <Header />
+            <Nav/>
             <div className="container">
                 <div className="carrinho">
                     <p className="resumo">Resumo do pedido</p>

@@ -1,11 +1,17 @@
 import './UpdatePassword.css'
 import { Link } from 'react-router-dom'
+import BannerFreight from '../../components/freightBanner/FreightBanner'
+import Nav from '../../components/nav/Nav'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+
+
 function UpdatePassword() {
     return (
         <>
+        <BannerFreight/>
             <Header></Header>
+            <Nav/>
             <div class="container-fluid mt-5 mb-5">
                 <div class="row justify-content-center rowCentralized">
 
@@ -32,7 +38,7 @@ function UpdatePassword() {
                                         </div>
 
                                         <div class="d-flex justify-content-center">
-                                            <Link to="../sucesso-atualizacao-senha/index.html"><button type="button" class="btn custom-button-update">Atualizar</button></Link>
+                                            <Link to="/SuccessPassword"><button type="button" class="btn custom-button-update">Atualizar</button></Link>
                                         </div>
 
                                         {/*} <div class="d-flex justify-content-center">
@@ -44,7 +50,7 @@ function UpdatePassword() {
                                                  </div> */}
                                         {/* OU */}
                                         <div class="d-flex justify-content-center mt-3">
-                                            <p class="text-atualizar-senha"><Link to="">Cancelar</Link></p>
+                                            <p class="text-atualizar-senha"><Link to="/">Cancelar</Link></p>
                                         </div>
 
                                     </div>

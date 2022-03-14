@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Login.css'
 import BannerFreight from '../../components/freightBanner/FreightBanner'
 import Nav from '../../components/nav/Nav'
@@ -50,11 +51,11 @@ function Login() {
                                             </div>
 
                                             <div className="d-flex justify-content-center">
-                                                <p className="text-esqueci-senha"><a href="../esqueci-minha-senha/index.html">Esqueceu sua senha?</a></p>
+                                            <Link to="/updatePassword">  <p className="text-esqueci-senha"><a href="../esqueci-minha-senha/index.html">Esqueceu sua senha?</a></p></Link>
                                             </div>
 
                                             <div className="d-flex justify-content-center">
-                                                <button type="button" className="btn custom-button">Login</button>
+                                            <Link to="/"><button type="button" className="btn custom-button">Login</button></Link>
                                             </div>
 
                                         </div>

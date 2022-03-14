@@ -1,6 +1,6 @@
 import './ProductInfoMain.css'
 import Heart from '../card/imgs/heart (2).png'
-
+import { Link } from 'react-router-dom'
 function ProductInfoMain(props) {
 
   const trocarImagem  =(el) => {
@@ -56,8 +56,8 @@ function ProductInfoMain(props) {
                     <input type="text" className="campo-qtd col-lg-1 col-md-1 col-2" name="format" value="0" id="format" size="2" />
                     <input type="button" className="adicionar col-lg-1 col-md-1 col-2" name="mais" id="mais" value="+" />
 
-                    <a className="col-xl-6 col-lg-10 col-md-5 col-10 " href="../carrinho/carrinho.html"><button className="btn btnAdicionarAoCarrinho "
-                      type="submit">Adicionar Ao Carrinho</button></a>
+                      <a className="col-xl-6 col-lg-10 col-md-5 col-10 " ><Link to="../cart"><button className="btn btnAdicionarAoCarrinho "
+                      type="submit">Adicionar Ao Carrinho</button></Link></a>
                   </div>
                 </div>
               </div>

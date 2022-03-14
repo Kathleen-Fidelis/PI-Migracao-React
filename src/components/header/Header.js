@@ -25,7 +25,7 @@ function Header(props) {
 
                             <div className="teste2">
                                 <button type="button" className="btn custom-btn cart ">
-                                     <p><span className="cartIcon"></span>| 0,00</p>
+                                     <p><Link to="/cart"><span className="cartIcon"></span>| 0,00</Link></p>
                                 </button>
 
                                 <span className="login-cadatro ">

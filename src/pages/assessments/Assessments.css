@@ -12,6 +12,23 @@ body{
 }
 
 
+.custom-btn-assessments{
+    background-color: #9ACCFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 68%;
+    height: 20px;
+    padding: 6%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.custom-btn-assessments:hover{
+    color: rgb(107, 107, 107);
+}
 
 
 

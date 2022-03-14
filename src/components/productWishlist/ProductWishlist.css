@@ -41,7 +41,7 @@ ul{
     font-size: 18px;
 }
 
-.produtoFav button{
+.trashbin{
     background-color: transparent;
     border: none;
     color: white;
@@ -55,15 +55,26 @@ ul{
     padding: 5px 40px;
 }
 
-.btnCarrinho{
+.lix button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+.btnCar button{
     background-color: #9CF38E;
     font-size: 14px;
-    height: 40px;
+    height: 46px;
     display: flex;
-    width: 175px;
+    width: 199px;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    align-items: center;
 }
+
 
 .tab-content{
     background-color: white;

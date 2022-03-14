@@ -11,7 +11,7 @@ import ListProduct from '../../components/productWishlist/ProductWishlist'
 function Wishlist() {
     return (
         <>
-            <Header />
+          
 
             <div className="titleCard" id="titleCardMinhaConta">
 
@@ -34,7 +34,7 @@ function Wishlist() {
                 </div>
             </div>
 
-            <Footer />
+         
         </>
     )
 }

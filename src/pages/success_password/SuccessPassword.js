@@ -1,5 +1,7 @@
 import './SuccessPassword.css'
 import { Link } from 'react-router-dom';
+import BannerFreight from '../../components/freightBanner/FreightBanner'
+import Nav from '../../components/nav/Nav'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import check from './img_success/checked.png'
@@ -8,7 +10,9 @@ import check from './img_success/checked.png'
 function SuccessPassword() {
     return (
         <>
+        <BannerFreight/>
             <Header/>
+            <Nav/>
             <div className="container-fluid mt-5 mb-5">
                 <div className="row">
                     <div className="col-md-12">
@@ -31,7 +35,7 @@ function SuccessPassword() {
                                         </div>
 
                                         <div className="d-flex justify-content-center">
-                                            <Link to=""><button type="button" className="btn custom-button">Login</button></Link>
+                                            <Link to="/login"><button type="button" className="btn custom-button">Login</button></Link>
                                         </div>
                                     </div>
                                 </div>

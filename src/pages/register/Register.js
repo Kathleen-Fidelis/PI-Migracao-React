@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Register.css'
 import Freight from '../../components/freightBanner/FreightBanner'
 import Header from '../../components/header/Header'
@@ -64,7 +65,7 @@ function Register() {
                                         </div>
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <button type="button" className="btn custom-button">Cadastrar</button>
+                                    <Link to="/">  <button type="button" className="btn custom-button">Cadastrar</button></Link>
                                     </div>
                                 </div>
                             </div>
