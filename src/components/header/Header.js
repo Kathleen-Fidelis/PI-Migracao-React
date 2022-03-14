@@ -2,14 +2,15 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 import logo from '../header/imgs/logo-pimpolhos-certo.gif';
 import user from '../header/imgs/baby-user.png';
-
-function Header() {
+import Cart from './imgs/cart.png'
+function Header(props) {
     return (
         <>
             <header>
                <div className="container-fluid">
                     <nav className="navbar navbar-expand-lg custom-nav">
                         <div className="container-fluid">
+                            
                         <Link to="../header/index.html"><img src={logo} alt="Logo" className='logo'/></Link>
                         
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,15 +22,16 @@ function Header() {
                                 <input className="form-control me-2" type="search" placeholder="Pesquise" aria-label="Search"/>
                             </form>
                             
+
                             <div className="teste2">
                                 <button type="button" className="btn custom-btn cart ">
-                                    <p> | 0,00</p>
+                                     <p><span className="cartIcon"></span>| 0,00</p>
                                 </button>
 
-                                <div className="login-cadatro ">
+                                <span className="login-cadatro ">
                                 <img src={user} alt="User" className='icone'/> 
                                     <p><Link to="../login/index.html"> login ou</Link>  <br/><Link to="../cadastro/index.html">cadastre-se</Link></p>
-                                </div>
+                                </span>
                             </div>
                         </div>
                         </div>

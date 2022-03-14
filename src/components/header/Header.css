@@ -91,8 +91,10 @@
     width: 149px;
     height: 37px;
 }
-
-.cart ::before {
+p span{
+    position: relative;
+}
+span.cartIcon::before{
     background-image: url(./imgs/cart.png);
     background-size: 25px;
     background-repeat: no-repeat;
@@ -100,8 +102,9 @@
     position: absolute;
     width: 32px;
     height: 40px;
-    right: 356px;
+    right: 3%;
 }
+
 
 .login-cadatro{
     margin-right: 30px;
@@ -164,8 +167,8 @@ button:focus:not(:focus-visible) {
         height: 108px;
     }
  
-    .cart ::before{
-        left: 14px;
+    .cartIcon::before{
+        right:10%;
     }
  
     .logo{
@@ -217,9 +220,7 @@ button:focus:not(:focus-visible) {
         height: 108px;
     }
  
-    .cart ::before{
-        left: 14px;
-    }
+ 
  
     .logo{
         height: 100px;
@@ -241,9 +242,7 @@ button:focus:not(:focus-visible) {
         justify-content: flex-start;
     }
 
-    .cart ::before{
-        right: 362px;
-    }
+    
 
     .login-cadatro{
         margin-left: 106px;
@@ -251,7 +250,7 @@ button:focus:not(:focus-visible) {
     }
 
     .logo{
-        height: 125px;
+       width:48%;
         padding-top: 16px;
     }
 

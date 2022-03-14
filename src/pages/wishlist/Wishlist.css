@@ -6,21 +6,8 @@ body{
 }
 
 
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-}
 
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-}
+
 
 ul{
     line-height: 2;

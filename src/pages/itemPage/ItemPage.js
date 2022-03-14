@@ -9,9 +9,9 @@ import Nav from '../../components/nav/Nav'
 
 
 import MainImage from '../../pages/product/imgs/camila.jpg'
-import MiniImg1 from '../../pages/product/imgs/camila.jpg'
-import MiniImg2 from '../../pages/product/imgs/camila.jpg'
-import MiniImg3 from '../../pages/product/imgs/camila.jpg'
+import MiniImg1 from '../../pages/product/imgs/detalheCamila.jpg'
+import MiniImg2 from '../../pages/product/imgs/detalheCamila2.jpg'
+import MiniImg3 from '../../pages/product/imgs/detalheBanheiraCamila.jpg'
 
 
 
@@ -23,18 +23,18 @@ function ItemPage() {
             <Header />
             <Nav />
             <InfoMain
-                nameProduct="Bebê Reborn Arthur"
+                nameProduct="Bebê Reborn Camila"
                 MainImg={MainImage}
                 miniImg1={MiniImg1}
                 miniImg2={MiniImg2}
                 miniImg3={MiniImg3}
-                codeProduct="S48002"
+                codeProduct="48002"
                 brand="PIMPOLHOS"
-                price="549,00"
-                parcel="54,90" />
+                price="459,00"
+                parcel="45,90" />
             <br />
-            <Description
-                sex="Menino"
+            <Description className="lastContainer"
+                sex="Menina"
                 size="55"
                 material="100% de silicone"
                 weight="1.500 g"
