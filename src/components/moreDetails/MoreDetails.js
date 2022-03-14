@@ -34,15 +34,15 @@ function MoreDetails(props) {
                                         <p className="title-container">Endereço de entrega</p>
                                         <hr />
 
-                                        <p className="title-container">Endereço: {props.address}</p>
+                                        <p className="title-container">Endereço: Rua Santo Antônio /nº 467</p>
 
                                         <div className="d-flex">
-                                            <p className="title-container">Bairro: {props.neighborhood}</p>
+                                            <p className="title-container">Bairro: Boa Vista</p>
 
-                                            <p className="p-cidade title-container">Cidade/UF: {props.city}</p>
+                                            <p className="p-cidade title-container">Cidade/UF: Rio Branco/Acre</p>
                                         </div>
 
-                                        <p className="title-container">Ponto de referência: {props.reference}</p>
+                                        <p className="title-container">Ponto de referência: {}</p>
 
                                     </div>
 

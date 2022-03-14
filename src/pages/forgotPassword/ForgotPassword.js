@@ -1,10 +1,15 @@
 import './ForgotPassword.css'
+import { Link } from 'react-router-dom'
+import BannerFreight from '../../components/freightBanner/FreightBanner'
+import Nav from '../../components/nav/Nav'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 function ForgotPassword() {
     return (
         <>
+        <BannerFreight/>
             <Header></Header>
+            <Nav/>
             <div className="container-fluid mt-5">
                 <div className="row justify-content-center rowCentralized">
 
@@ -32,7 +37,7 @@ function ForgotPassword() {
                                         </div>
 
                                         <div className="d-flex justify-content-center">
-                                            <a href="../atualizar-senha/index.html"><button type="button" className="btn custom-button">Próximo</button></a>
+                                        <Link to="/updatePassword">   <a href="../atualizar-senha/index.html"><button type="button" className="btn custom-button">Próximo</button></a></Link>
                                         </div>
 
                                         <div className="d-flex justify-content-center">

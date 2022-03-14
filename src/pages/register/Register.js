@@ -65,7 +65,7 @@ function Register() {
                                         </div>
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                    <Link to="/">  <button type="button" className="btn custom-button">Cadastrar</button></Link>
+                                    <Link to="/login">  <button type="button" className="btn custom-button">Cadastrar</button></Link>
                                     </div>
                                 </div>
                             </div>

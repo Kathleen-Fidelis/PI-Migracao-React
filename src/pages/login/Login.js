@@ -51,7 +51,7 @@ function Login() {
                                             </div>
 
                                             <div className="d-flex justify-content-center">
-                                            <Link to="/updatePassword">  <p className="text-esqueci-senha"><a href="../esqueci-minha-senha/index.html">Esqueceu sua senha?</a></p></Link>
+                                            <Link to="/forgotPassword">  <p className="text-esqueci-senha"><a href="../esqueci-minha-senha/index.html">Esqueceu sua senha?</a></p></Link>
                                             </div>
 
                                             <div className="d-flex justify-content-center">

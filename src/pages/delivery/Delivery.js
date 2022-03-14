@@ -377,6 +377,9 @@ function Delivery() {
                                     </div>
                                     <div className="row row-delivery">
                                         <div className="valor col-12">
+                                        <br/>
+                                    <br/>
+
                                             <strong>Valor total: </strong> R$ 549,90
                                         </div>
                                     </div>
@@ -437,6 +440,10 @@ function Delivery() {
                                     </div>
                                     <div className="row row-delivery">
                                         <div className="valor col-12">
+                                        <br/>
+                                    <br/>
+                                 
+                                  
                                             <strong>Valor total: </strong> R$ 549,90
                                         </div>
                                     </div>

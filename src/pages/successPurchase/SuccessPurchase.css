@@ -32,17 +32,8 @@ hr{
 }
 
 
-.card{
-    width: 741px;
-}
 
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-   /*  margin-top: 100px; */
-   margin-bottom: 40px;
-}
+
 
 .text-title{
     font-size: 24px;
@@ -87,9 +78,7 @@ hr{
     margin-left: 29px;
 }
 
-.form-control:disabled{
-    background-color: #f7d8948a;
-}
+
 
 .infos-loja{
     margin-top: 15px;
