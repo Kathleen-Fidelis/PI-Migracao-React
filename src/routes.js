@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer'
 import Contact from './pages/contact us/Contact'
 import SuccessPassword from './pages/success_password/SuccessPassword'
 import Wishlist from "./pages/wishlist/Wishlist";
+import MyAccount from './pages/myAccount/MyAccount'
 
 export const Routes = () => {
     return (
@@ -17,6 +18,7 @@ export const Routes = () => {
             <Route path="/Contact" component={Contact} />
             <Route path="/SuccessPassword" component={SuccessPassword} />
             <Route path="/Wishlist" component={Wishlist}/>
+            <Route path="/MyAccount" component={MyAccount}/>
 
         </Switch>
     )
