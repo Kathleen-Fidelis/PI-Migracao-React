@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Delivery.css'
 import Nav from '../../components/nav/Nav'
 import CheckoutProduct from '../../components/checkoutProduct/CheckoutProduct'
@@ -532,7 +533,7 @@ function Delivery() {
                     <div className="row row-delivery">
 
                         <div className="btnFinalizarCompra col-12">
-                            <a href="../sucesso-compra/index.html"><button><strong>Finalizar Compra</strong></button></a>
+                            <a ><button> <Link to="/successPurchase"><strong>Finalizar Compra</strong></Link></button></a>
                         </div>
 
                     </div>

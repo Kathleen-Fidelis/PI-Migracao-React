@@ -57,10 +57,10 @@ function Cart(props) {
                     </ul>
                 </div>
                 <div className="botao-comprar col-12">
-                    <Link to="../header/index.html">
+                    <Link to="/">
                         <button type="button" className="btn-continuar btn btn-primary btn-lg">Continuar comprando</button>
                     </Link>
-                    <Link to="../login/index.html">
+                    <Link to="../delivery">
                         <button type="button" className="btn-finalizar btn  btn-secondary btn-lg">Finalizar compra</button>
                     </Link>
                 </div>

@@ -10,7 +10,7 @@ import Contact from './pages/contact us/Contact'
 import SuccessPassword from './pages/success_password/SuccessPassword'
 import Wishlist from "./pages/wishlist/Wishlist";
 
-
+import SuccessPurchase from './pages/successPurchase/SuccessPurchase'
 import MyAccount from './pages/myAccount/MyAccount'
 import ForgotPassword from './pages/forgotPassword/ForgotPassword'
 import Register from './pages/register/Register'
@@ -25,6 +25,7 @@ import Login from './pages/login/Login'
 export const Routes = () => {
     return (
         <Switch>
+            <Route path="/successPurchase" component={SuccessPurchase}/>
             <Route path="/" component={Home} exact />
             <Route path="/product" component={Product} />
             <Route path="/cart" component={Cart} />
