@@ -25,7 +25,6 @@ import Login from './pages/login/Login'
 export const Routes = () => {
     return (
         <Switch>
-            
             <Route path="/" component={Home} exact />
             <Route path="/product" component={Product} />
             <Route path="/cart" component={Cart} />
