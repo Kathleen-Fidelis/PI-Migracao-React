@@ -128,8 +128,8 @@ body{
     }
     
     .campo-cep{
-        height: 16vh;
-        width: 84vh;
+        /* height: 16vh;
+        width: 84vh; */
 
     }
     .produtos-relacionados{
@@ -147,25 +147,24 @@ body{
         background-color:  #47a0f8 ;
     }
     
-    .adicionar{
+    .adicionar-cart{
         width: 19px;
         border-radius: 6px;
         background-color: white;
         border-style: solid;
-        height: 27px;
-        margin-top: 10px;
-        padding-bottom: 10px;
+        height: 35px;
+        
     }
     
-    .subtrair{
+    .subtrair-cart{
         width: 19px;
         border-radius: 6px;
         background-color: white;
         border-style: solid;
-        height: 27px;
+        height: 35px;
     }
     
-    .campo-qtd{
+    .campo-qtd-cart{
         border-radius: 13px;
         width: 42px;
         padding-left: 14px;

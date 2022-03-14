@@ -41,7 +41,7 @@ function Product() {
            
 
             <Pagination />
-            <Footer/>
+            {/*<Footer/>*/}
         </>
     )
 }
