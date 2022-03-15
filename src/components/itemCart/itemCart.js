@@ -16,9 +16,9 @@ function ItemCart(props) {
                     <li className="descricao-produto">{props.name}</li>
                     <li className="sub-preco">R${props.price}</li>
                     <li className="qtd">
-                        <input type="button" className="adicionar-cart" name="mais2" id="mais2" value="+" />
-                        <input type="text" className="campo-qtd-cart" name="format2" value="0" id="format2" size="2"/>
-                        <input type="button" className="subtrair-cart" name="menos2" id="menos2" value="-" />
+                        <input type="button" className="adicionar" name="mais2" id="mais2" value="+" />
+                        <input type="text" className="campo-qtd" name="format2" value="0" id="format2" size="2" />
+                        <input type="button" className="subtrair" name="menos2" id="menos2" value="-" />
                     </li>
                     <li className="sub-total">R${props.total}</li>
                     <li className="lixeira">
