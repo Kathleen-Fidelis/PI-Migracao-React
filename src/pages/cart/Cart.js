@@ -8,7 +8,7 @@ import Nav from '../../components/nav/Nav'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 
-import ItemCart from '../../components/itemCart/ItemCart'
+import ItemCart from '../../components/itemCart/itemCart'
 
 import RelatableProductsContainer from "../../components/relatableProductsContainer/RelatableProductsContainer"
 function Cart(props) {
