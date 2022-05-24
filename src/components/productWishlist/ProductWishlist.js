@@ -8,7 +8,7 @@ function ProductWishlist(props) {
       <div className="cardContent">
         <div className="produtoFav">
           <div className="col-md-2 col-8 ">
-            <img src={ props.image } width="75%" />
+            <img  className="BabyImage" src={ props.image } width="75%" />
           </div>
           <div className="col-sm-10 col-lg-5">
             <ul type="none">
@@ -19,13 +19,12 @@ function ProductWishlist(props) {
           </div>
           <div className=" lixeiraBtnAdd">
 
-            <div className="col-md-4 col-lg-3">
-              <button><img src={lixeira} width="35px" /></button>
+            <div className="lix col-md-4 col-lg-3">
+              <button><img className="btn-lixeira" src={lixeira}  /></button>
             </div>
-            <div className="lineVertical col-1">.
-              <div className="btnCarrinho col-3">
-                <button><strong>Adicionar ao Carrinho</strong> </button>
-              </div>
+            {/* <div className="lineVertical col-1">.</div> */}
+            <div className="btnCar col-8">
+              <button><strong>Adicionar ao Carrinho</strong> </button>
             </div>
           </div>
         </div>

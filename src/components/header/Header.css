@@ -1,265 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto+Mono:wght@200;300&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Comfortaa', cursive;
-    max-width: 100%;
+.headerNavBar{
+    background-color:#E6889A;
+}
+.navSearch{
+    justify-content:flex-end;
+    display: flex;
+}
+.row.navLinks{
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+}
+.collapse .navbar-nav.row{
+    justify-content: space-between;
+}
+.input-group-addon{
+    display:none;
 }
 
-.navbar-toggler-icon{
-    background-image: url(./imgs//menu-maior.png);
-}
-
-.container-fluid{
-    padding: 0;
-}
-
-
-.custom-nav{
-    background-color: #E6889A;
-    height: 90px;
-}
-
-.logo{
-    padding-bottom: 10px;
-    margin-left: 20px;
-}
-
-/* .custom-form{
-    margin-left: 115px;
-} */
-
-.custom-form input{
-    width: 585px;
-    height: 37px;
-}
-
-.custom-form ::after{
-    background-image: url(./imgs/search.png);
-    background-size: 23px;
-    background-repeat: no-repeat;
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 40px;
-}
-
-.icone{
-    position: relative;
-    padding-top: 15px;
-    width: 32px;
-    height: 44px;
-    left: 35px;
-    margin-top: 8px;
-}
-
-.cart p{
-    color: white;
+.navLinks a{
+    padding:0;
+    display: inline;
     text-align: center;
-    font-size: 18px;
 }
 
-.login-cadatro p a{
-    text-align: center;
-    margin-right: 10px;
-    padding-bottom: 5px;
-    color: white;
-    text-decoration: none;
+.boxSearch{
+
+    background-color: white;
+    border-radius:25px;
+    width: 90%;
+}
+.boxSearch input{
+    border-radius: 25px;
+    border: none;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%);
 }
 
-.login-cadatro p {
-    text-align: center;
-    margin-right: 10px;
-    padding-bottom: 5px;
-    color: white;
-    text-decoration: none;
-}
 
-.login-cadatro p a:hover{
-    color: gray;
-}
 
-.link-login-cadastro{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
 
-.custom-btn cart{
-    margin-left: 100px;
-    background-color: #9ACCFF;
-    width: 149px;
-    height: 37px;
+.navbar-collapse .navbar-nav {
+   align-items: center;
+
+}
+.headerCart{
+    background-color:#9abdff;
+    border-radius:24px;
+    height:38px;
+    width: 137px;
     
 }
 
-.cart ::before {
-    background-image: url(./imgs/cart.png);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 40px;
-    right: 356px;
-}
+ .headerCart .nav-link:hover{
+    color:white;
+outline:3px solid rgb(232, 232, 232);
+border-radius:25px;
+height:38px;
 
-.login-cadatro{
-    margin-right: 30px;
+}
+.minicartPng{
+height:20px;
 }
 
 
-
-.navbar-collapse{
-    flex-grow: 0;
-    background-color: #E6889A;
+.cartPriceItems {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2px;
 }
 
-button:focus:not(:focus-visible) {
-    outline: 0;
-    color: #ff00814a;
+.babyPngUser{
+    width: 52px;
+    height: 28px;
 }
-
-
-
-@media (max-width: 992px){ 
-    *{
-        max-width: 100%;
+.supportphrase{
+    display: none;
+}
+@media (max-width: 991px) {
+    .collapse .navbar-nav.row {
+        justify-content: center;
+        --bs-gutter-x: 0;
     }
+    .collapse .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .navSearch {
+        justify-content: center;
+    }
+    .headerCart {
+        height: 43px;
+        width: 213px;
+    }
+    .cartPriceItems {
+        font-size: 19px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -1%;
+        margin-left: -12%;
+    }
+    .minicartPng{
+        height: 30px;
+        width: 35px;
+
+        }
+    .boxSearch input {
+        
+            border-radius: 25px;
+            border: none;
+            height: 48px;
+            font-size: 13px;
+        
+     }
+     .row.navLinks {
+        display: flex;
+        font-size: 16px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .babyPngUser{
+     width: 58px;
+    height: 36px;
+}
+    .supportphrase{
+        display: inline;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+    .nav-link.active.loginLink{
+        text-align: start;
+    }
+    .navLinks a {
+        text-align:end;
+    }
+    .boxSearch{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    }
+}
+@media (max-width: 768px){
+    .headerCart {
+        width: 165px;
+    }
+    .cartPriceItems {
+            font-size: 15px;
+            margin-top: 0%;
+            margin-left: -21%;
+    }
+    .minicartPng{
+    height: 27px;
+    width: 27px;
+}
+
+.row.navLinks {
+        font-size: 14px;
+        justify-content: flex-end;
     
-    .custom-form input{
-        width: 278px;
-        margin-left: 20px;
-    }
- 
-    .navbar-collapse{
+}
+.babyPngUser {
+   display: none;
+}
+}
+
+@media (max-width: 575px){
+  .babyPngUser{
+      display: none;
+  }
+    .row.navLinks {
         display: flex;
-        height: 80px;
+        font-size: 16px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
- 
-    .custom-btn{
-        position: relative;
-        right: 55px;
+    .headerCart {
+        width: 142px;
+    }
+    .minicartPng {
+        height: 20px;
+        width: 24px;
+    }
+    .headerCart {
+        width: 140px;
+        height: 36px;
     }
 
-    .teste2{
-        display: flex;
-        align-items: center;
+    .cartPriceItems {
+       
+            font-size: 14px;
+            margin-top: -2%;
+            margin-left: -14%;
+        
     }
- 
-    /* .teste{
-        display: flex;
-    } */
- 
-    .icone{
-        width: 23px;
-        height: 40px;
-        left: 20px;
-    }
- 
-    .login-cadatro{
-        font-size: 9px;
-    }
- 
-    .custom-nav{
-        height: 108px;
-    }
- 
-    .cart ::before{
-        left: 14px;
-    }
- 
-    .logo{
-        height: 100px;
-    }
-
-    .navbar-toggler{
-        margin-right: 3%;
-    }
-     
- }
-
-
-@media (max-width: 767px){ 
-    .custom-form input{
-        width: 350px;
-        margin-left: 20px;
-    }
- 
-    .navbar-collapse{
-        display: flex;
-        height: 116px;
-        display: block;
-    }
- 
-    .custom-btn{
-        position: relative;
-        right: 55px;
-        margin-left: 78px;
-    }
-
-    .teste2{
-        display: flex;
-    }
- 
-    
- 
-    .icone{
+    .supportphrase{
         display: none;
     }
- 
-    .login-cadatro p{
-        font-size: 15px;
-        padding-top: 15px;
-        margin-bottom: 5px;
+    .row.navLinks {
+            display: flex;
+            font-size: 15px;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+            align-content: center;
     }
- 
-    .custom-nav{
-        height: 108px;
+    .navLinks a {
+        text-align: center;
     }
- 
-    .cart ::before{
-        left: 14px;
-    }
- 
-    .logo{
-        height: 100px;
-    }
-     
- }
-
-
-@media (min-width: 993px){
-    .navbar-collapse{
-        height: 90px;
-    }
-
-    .custom-form input{
-        margin-left: 108px;
-    }
-
-    .navbar .container-fluid{
-        justify-content: flex-start;
-    }
-
-    .cart ::before{
-        right: 362px;
-    }
-
-    .login-cadatro{
-        margin-left: 106px;
-        font-size: 15px;
-    }
-
-    .logo{
-        height: 125px;
-        padding-top: 16px;
-    }
-
-    .teste2{
-        display: flex;
-        align-items: center;
+    .nav-link.active.loginLink {
+        text-align: center; 
     }
 }
-

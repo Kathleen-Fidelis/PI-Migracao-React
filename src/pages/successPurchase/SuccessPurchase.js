@@ -1,32 +1,42 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './SuccessPurchase.css'
-import Nav from '../../components/nav/Nav'
-import BannerFreight from '../../components/bannerFreight/BannerFreight'
+import BannerFreight from '../../components/freightBanner/FreightBanner'
 import ImagemSucesso from './imgs/checked.png'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
+import Nav from '../../components/nav/Nav'
+import SuccessPurschaseItens from '../../components/successPurchaseItens/SuccessPurchaseItens'
+import ItensProducts from '../../components/successPurchaseItens/ItensProducts'
 
-function SucessPurchase() {
+
+function SucessPurchase(props) {
 
 
 
     return (
         <>
+        <div className="pageSucessPurchase">
         <BannerFreight/>
         <Header/>
         <Nav/>
         <div className="container-fluid mt-5">
-    <div className="row">
-      <div className="col-md-12">
+    <div className="row justify-content-center">
+      <div className="col-md-8">
 
-        <div className="container">
-          <div className="card ">
+        
+          <div className="card cardSuccessPurchase">
 
-            <div className="row justify-content-center">
-            <img src={ImagemSucesso} alt="" className='img-checked' />
+            <div className="row  rowCentralized justify-content-center">
+            <div className="col-lg-1 col-2">
+              <img src={ImagemSucesso} alt="" className='img-checked' />
+              </div>
+          </div>
 
+          <div className="row  rowCentralized justify-content-center">
               <div className="col-md-10">
-              <div className="p-sucesso">
+                <div className="row justify-content-center">
+              <div className="p-sucesso col-11">
                 <p className="p-sucesso-title p">
                     Compra realizada com sucesso!!
                 </p >
@@ -34,12 +44,10 @@ function SucessPurchase() {
                 <p className="p-segunto-texto">
                     A confirmação do seu pedido foi enviada para seu e-mail
                 </p>
-                <div className="info-pessoal">
-                <p><b>Forma de Pagamento:</b> Cartão de Credito 4x Sem Juros</p>
-                <p><b>Forma de Entrega:</b> Correio</p>
-                </div>
+                <SuccessPurschaseItens formPagment="Cartão de Crédito" parcel="4 X Vezes Sem Juros" delivery="Correios"/>
             </div>
-                <hr/>
+              <div className="col-11">
+                
                 <table className="table">
                 <thead>
                     <tr>
@@ -49,39 +57,30 @@ function SucessPurchase() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Bebê Reborn Realista - <br /> Abigail Pode Dar Banho</td>
-                        <td>R$ 999,99</td>
+                  
+                <ItensProducts id="1" name="Bebê Reborn Realista -" subname="Abigail Pode Dar Banho" value="999,99"/>
+                <ItensProducts id="2" name="Bebê reborn Alice -" subname="Com coelinho" value="599,99"/>
+        
                         
-                        
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Bebê reborn Alice - <br /> Com coelinho</td>
-                        <td>R$ 599,99</td>
-                        
-                    </tr>
-                    <tr>
-                        <th scope="row">Total</th>
-                        <td></td>
-                        <td>R$ 1.599,98</td>
-                        
-                    </tr>
+                    
+                <ItensProducts id="Total"  value="1.599,98"/>
                 </tbody>
             </table>
+            </div>
             <div className="d-flex justify-content-center">
-                <button type="button" className="btn custom-button"> Meus Pedidos</button>
+            <Link to="/profile"> <button type="button" className="btn custom-button1"> Meus Pedidos</button></Link>
+            </div>
             </div>
                 </div>
-              </div>
+                </div>
             </div>
 
-          </div>
+   
         </div>
       </div>
     </div>
     <Footer/>
+    </div>
         </>
     )
 }

@@ -1,25 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-
-.container {
+.title-wishlist{
     display: flex;
     justify-content: center;
-    width: 100%;
-    flex-direction: column;
+    align-items: center;
 }
 
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
+.wishlist-title{
+display: flex;
+align-items: center;
+justify-content: center;
+color: gray;
 }
 
 ul{
@@ -31,13 +21,7 @@ ul{
     height: 100%;
 }
 
-.produtoFav{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 
 .cod{
     font-size: 12px;
@@ -48,11 +32,7 @@ ul{
     font-size: 18px;
 }
 
-.produtoFav button{
-    background-color: transparent;
-    border: none;
-    color: white;
-}
+
 
 .lineVertical{
     width: 25px;
@@ -164,6 +144,9 @@ h1{
     width: 35%;
 }
 
+.row-wishlist{
+    --bs-gutter-x: 0.5rem;
+}
 
 
 @media (max-width: 425px){
@@ -181,20 +164,12 @@ h1{
 }
 
 
+
 @media (max-width: 1024px){
     .lixeiraBtnAdd {
     display: flex;
     align-items: center;
     width: 35%;
-    margin-left: 173px;
+    margin-left: 50%;
     }
 }
-
-
-
-
-
-
-
-
-

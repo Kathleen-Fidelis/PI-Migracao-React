@@ -1,26 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-}
-
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-}
 
 ul{
     line-height: 2;
@@ -48,29 +26,40 @@ ul{
     font-size: 18px;
 }
 
-.produtoFav button{
+.trashbin{
     background-color: transparent;
     border: none;
     color: white;
 }
 
 .lineVertical{
-    width: 25px;
+    width: 0px;
     height: 50px;
     font-size: 1px;
     border-left: 2px solid black;
-    padding: 5px 40px;
+    padding: 5px 15px;
 }
 
-.btnCarrinho{
+.lix button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+
+.btnCar button{
     background-color: #9CF38E;
     font-size: 14px;
-    height: 40px;
+    height: 46px;
     display: flex;
-    width: 175px;
+    width: 199px;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    align-items: center;
 }
+
 
 .tab-content{
     background-color: white;
@@ -156,45 +145,123 @@ h1{
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 1%;
 }
 
 .lixeiraBtnAdd {
     display: flex;
     align-items: center;
     width: 35%;
+    
 }
 
-
+.btn-lixeira{
+    width: 35px;
+    height: 27px;
+}
 
 @media (max-width: 425px){
     nav-link.principal {
         width: 366px;
     }
 
+    .lineVertical{
+        margin-right: -22px;
+        width: 0px;
+        height: 50px;
+        font-size: 1px;
+        border-left: 2px solid black;
+        padding: 5px 15px;
+    }
+
     .lixeiraBtnAdd{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 35%;
+        width: 45%;
         margin-left: 143px;
+    }
+    .btnCar button {
+        background-color: #9CF38E;
+        font-size: 14px;
+        height: 38px;
+        display: flex;
+        width: 181px;
+        justify-content: center;
+        border-radius: 24px;
+        border: none;
+        color: white;
+        align-items: center;
+    }
+
+    .lixeiraBtnAdd {
+        display: flex;
+        align-items: center;
+        width: 10rem;
+        margin-left: -67px;
     }
 }
 
 
-@media (max-width: 1024px){
+/* @media (min-width: 768px ){
     .lixeiraBtnAdd {
     display: flex;
     align-items: center;
-    width: 35%;
-    margin-left: 173px;
+    width: 50rem; 
+    margin-left: 372px; 
     }
 }
 
 
+@media (max-width: 822px ){
+    .lixeiraBtnAdd {
+    display: flex;
+    align-items: center;
+    width: 50rem; 
+    margin-left: 372px; 
+    }
+} */
+
+    
+
+@media (min-width: 1000px){
+    .lixeiraBtnAdd {
+    display: flex;
+    align-items: center;          
+    margin-left: 3px;
+    }
+}
+@media (max-width:500px){
+.produtoFav{
+    justify-content:space-evenly;
+
+}   
+
+}
+@media (max-width:500px){
+    .produtoFav{
+        justify-content:space-evenly;
+    }
+}
+
+@media (max-width:800px){
+    .cartimG {
+    width: 5%;
+    height: 35px;
+    }
+}
+
+@media (max-width:500px){
+    .produtoFav{
+        justify-content:space-evenly;
+
+    }
+    .cartimG {
+        width: 11%;
+        height: 35px;
+    
+    }
 
 
-
-
-
-
+}
 
