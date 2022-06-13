@@ -1,10 +1,22 @@
 import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
 import './Nav.css'
 import Product1 from "../../pages/boyProduct/BoyProduct"
 
 
-
 function Nav() {
+
+
+    const[user,setUser]  = useState("");
+
+
+const getUser = () =>{
+ setUser (localStorage.getItem('UserName'))
+
+}
+useEffect(() => {
+    getUser()
+  }, []);
     return (
         <>
 
@@ -32,9 +44,12 @@ function Nav() {
                 <li className="nav-item menu-li">
                     <Link to="/Contact" className="nav-link menu-a" >Atendimento</Link>
                 </li>
+                {user &&(
                 <li className="nav-item menu-li">
                     <Link to="/profile" className="nav-link menu-a">Meu Perfil</Link>
-                </li>
+                </li>)}{!user &&( <li className="nav-item menu-li">
+                   
+                </li>)}
             </ul>
 
 

@@ -32,9 +32,9 @@ function Footer() {
                                 <div class="accordion-body">
                                     
                                     <ul type="none">    
-                                        <li><Link to="" className="nav-Link" >Login</Link></li>
-                                        <li><Link to=""  className="nav-Link">Cadastre-se</Link></li>
-                                        <li><Link to="" className="nav-Link">Recuperar senha </Link></li>
+                                        <li><Link to="/login" className="nav-Link" >Login</Link></li>
+                                        <li><Link to="/register"  className="nav-Link">Cadastre-se</Link></li>
+                                        <li><Link to="/" className="nav-Link">Recuperar senha </Link></li>
                                     </ul>   
                                     
                                 </div>
@@ -49,9 +49,9 @@ function Footer() {
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <ul type="none">    
-                                        <li><Link to="" className="nav-Link" >Termos de serviço</Link></li>
-                                        <li><Link to=""  className="nav-Link">Politica de privacidade</Link></li>
-                                        <li><Link to="" className="nav-Link">Politica de cookies </Link></li>
+                                        <li><Link to="/" className="nav-Link" >Termos de serviço</Link></li>
+                                        <li><Link to="/"  className="nav-Link">Politica de privacidade</Link></li>
+                                        <li><Link to="/" className="nav-Link">Politica de cookies </Link></li>
                                     </ul> 
                                 </div>
                             </div>
@@ -65,10 +65,10 @@ function Footer() {
                             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <ul type="none">    
-                                        <li><Link to="" className="nav-Link" >Trocas</Link></li>
-                                        <li><Link to=""  className="nav-Link">Devoluções</Link></li>
-                                        <li><Link to="" className="nav-Link">Sugestões </Link></li>
-                                        <li><Link to="" className="nav-Link">Fale Conosco</Link></li>
+                                        <li><Link to="/" className="nav-Link" >Trocas</Link></li>
+                                        <li><Link to="/"  className="nav-Link">Devoluções</Link></li>
+                                        <li><Link to="/" className="nav-Link">Sugestões </Link></li>
+                                        <li><Link to="/" className="nav-Link">Fale Conosco</Link></li>
                                     </ul> 
                                 </div>
                             </div>
@@ -80,10 +80,10 @@ function Footer() {
 
                             <ul className=" nav flex-column">
                                 <li className="nav-item-img">
-                                    <Link to="" className="img-footer"><img src={instagram} height="30px" width="30px" alt="instagram" /></Link>
-                                    <Link to="" className="img-footer"><img src={facebook} height="30px" width="30px" alt="facebook" /></Link>
-                                    <Link to="" className="img-footer"><img src={whatsapp} height="30px" width="30px" alt="whatsapp" /></Link>
-                                    <Link to="" className="img-footer"><img src={youtube} height="30px" width="30px" alt="youtube" /></Link>
+                                    <Link to="/" className="img-footer"><img src={instagram} height="30px" width="30px" alt="instagram" /></Link>
+                                    <Link to="/" className="img-footer"><img src={facebook} height="30px" width="30px" alt="facebook" /></Link>
+                                    <Link to="/" className="img-footer"><img src={whatsapp} height="30px" width="30px" alt="whatsapp" /></Link>
+                                    <Link to="/" className="img-footer"><img src={youtube} height="30px" width="30px" alt="youtube" /></Link>
                                 </li>
                             </ul>
 
@@ -129,14 +129,14 @@ function Footer() {
                         <div className=" coluna-2">
                             <ul className="nav flex-column teste">
                                 <li className="nav-item ">
-                                    <Link to="" className="nav-Link" aria-current="page">Termos de serviço</Link>
+                                    <Link to="/" className="nav-Link" aria-current="page">Termos de serviço</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link to="" className="nav-Link">Politica de privacidade</Link>
+                                    <Link to="/" className="nav-Link">Politica de privacidade</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="" className="nav-Link" >Politica de cookies </Link>
+                                    <Link to="/" className="nav-Link" >Politica de cookies </Link>
                                 </li>
                             </ul>
                         </div>
@@ -144,13 +144,13 @@ function Footer() {
                         <div className=" coluna-3">
                             <ul className="nav flex-column teste">
                                 <li className="nav-item">
-                                    <Link to="" className="nav-Link" aria-current="page">Trocas</Link>
+                                    <Link to="/" className="nav-Link" aria-current="page">Trocas</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="" className="nav-Link">Devoluções</Link>
+                                    <Link to="/" className="nav-Link">Devoluções</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="" className="nav-Link">Sugestões </Link>
+                                    <Link to="/" className="nav-Link">Sugestões </Link>
                                 </li>
                             </ul>
                         </div>
@@ -166,10 +166,10 @@ function Footer() {
 
                             <ul className=" nav flex-column">
                                 <li className="nav-item-img">
-                                    <Link to="" className="img-footer"><img src={instagram} height="30px" width="30px" alt="instagram" /></Link>
-                                    <Link to="" className="img-footer"><img src={facebook} height="30px" width="30px" alt="facebook" /></Link>
-                                    <Link to="" className="img-footer"><img src={whatsapp} height="30px" width="30px" alt="whatsapp" /></Link>
-                                    <Link to="" className="img-footer"><img src={youtube} height="30px" width="30px" alt="youtube" /></Link>
+                                    <Link to="/" className="img-footer"><img src={instagram} height="30px" width="30px" alt="instagram" /></Link>
+                                    <Link to="/" className="img-footer"><img src={facebook} height="30px" width="30px" alt="facebook" /></Link>
+                                    <Link to="/" className="img-footer"><img src={whatsapp} height="30px" width="30px" alt="whatsapp" /></Link>
+                                    <Link to="/" className="img-footer"><img src={youtube} height="30px" width="30px" alt="youtube" /></Link>
                                 </li>
                             </ul>
 

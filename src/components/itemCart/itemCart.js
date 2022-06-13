@@ -1,14 +1,22 @@
-import { Link } from "react-router-dom";
 import CartContext from "../../context/cart.provider";
-import React, { useContext, useState } from "react";
-import './itemCart.css'
-
+import React, { useContext, useState, useEffect } from "react";
+import "./itemCart.css";
 import lixeira from "../../pages/cart/imgs/lixeira.png";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ItemCart(props) {
-    const { deleteCart } = useContext(CartContext);
-    
+  const notifyDelete = () => toast.success("Deletado com sucesso");
+
+  const { deleteCart } = useContext(CartContext);
+
+  var atual = props.price;
+  var precoFormat = atual.toLocaleString("pt-br", { minimumFractionDigits: 2 });
+
+  var atualTotal = props.total;
+  var totalFormat = atualTotal.toLocaleString("pt-br", {
+    minimumFractionDigits: 2,
+  });
 
   return (
     <>
@@ -23,32 +31,47 @@ function ItemCart(props) {
         </div>
         <div className="cart-product-info">
           <p className="cart-product-name">{props.name}</p>
-          <p className="cart-price-sm">R$ {props.price}</p>
-          <small>x 1</small>
+          <p className="cart-price-sm">R$ {precoFormat}</p>
         </div>
       </div>
       <div className="remove-1">
-        <button type="button" onClick={() => deleteCart(props.id)}>
+        <button
+          type="button"
+          onClick={() => {
+            deleteCart(props.id);
+            notifyDelete();
+          }}
+        >
           <img src={lixeira} alt="lixeira" width="30px" height="30px" />
         </button>
+        <ToastContainer autoClose={500} />
+
       </div>
       <div className="cart-quantity-md">
         <div className="cart-quantity-controls">
-          <button className="btn-menos btn-CustomCart" >-</button>
-            <div><strong>85</strong></div>
-          <button className="btn-mais btn-CustomCart" >+</button>
+          <button
+            className="btn-menos btn-CustomCart"
+            onClick={() => props.decrementar("-", props.id)}
+          >
+            -
+          </button>
+          <div>{props.quantidade}</div>
+          <button
+            className="btn-mais btn-CustomCart"
+            onClick={() => props.incrementar("+", props.id)}
+          >
+            +
+          </button>
         </div>
       </div>
       <div className="cart-unit-price">
-        <h4>R${props.price}</h4>
+        <h4>R$ {precoFormat}</h4>
       </div>
       <div className="cart-product-total">
-        <h4>R${props.total}</h4>
-      </div>
 
-    
+        <h4>R$ {totalFormat} </h4>
+      </div>
     </>
-    
   );
 }
 

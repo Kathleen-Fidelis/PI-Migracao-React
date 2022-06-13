@@ -12,17 +12,32 @@ import ItemCart from '../../components/itemCart/itemCart'
 import Check from '../cart/imgs/sucesso.png'
 import ProductList from '../../components/productList/ProductList'
 import CartContext from '../../context/cart.provider'
-
 import RelatableProductsContainer from "../../components/relatableProductsContainer/RelatableProductsContainer"
-function Cart() {
-    const { cart, getCart } = useContext(CartContext)
 
-    
+function Cart(props) {
+    const { cart, getCart } = useContext(CartContext)
+    const[user,setUser]  = useState("");
     useEffect(() => {
         getCart()
     }, [])
 
+
+    const getUser = () =>{
+        setUser (localStorage.getItem('UserName'))
+       
+       }
+    useEffect(() => {
+        getUser()
+      }, []);
+
+    const totalCarrinho = JSON.parse(localStorage.getItem('cart')) 
+
+    const valorTotal = totalCarrinho.map(item => item.total).reduce((prev, curr) => prev + curr, 0);
     
+    var atualTotal = valorTotal
+    var totalFormat = atualTotal.toLocaleString('pt-br', {minimumFractionDigits: 2});
+    
+
     return (
         <>
         <div className="pageCart">
@@ -54,21 +69,23 @@ function Cart() {
 
                     </div>
                     <div className="campo-infos-cart" style={{backgroundColor:'white'}}>
-                        <div className="campo-cep">
+                        {/* <div className="campo-cep">
                             <Link to="" className="text-cep">Calcule o frete</Link>
                             <form class="d-flex ">
                                 <input type="text" className="input-cep" cep-mask="0000-000" placeholder="0000-000" />
                                 <button class="btn-cep" type="submit"><img src={Check} alt="Logo" width="20px" /></button>
                             </form>
-                        </div>
+                        </div> */}
 
                         <div className="cart-total-holder">
-                            <p className="total-carrinho">Total: R$399,90</p>
+                            <h2>Total:  </h2>
+                            <p className="total-carrinho"> R$ {totalFormat}</p>
                         </div>
                     </div>
                     <div className="cart-action-button">
-                        <Link to="/Product" className="btn-main">Continuar comprando</Link>
-                        <Link to="/Delivery" className="btn-main">Finalizar compra</Link>
+                        <Link to="/" className="btn-main">Continuar comprando</Link>
+                       {user &&( <Link to="/delivery" className="btn-main">Finalizar compra</Link>)}
+                       {!user &&( <Link to="/login" className="btn-main">Finalizar compra</Link>)}
                     </div>
 
                 </div>

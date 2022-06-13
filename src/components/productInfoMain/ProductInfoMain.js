@@ -3,6 +3,19 @@ import Heart from '../card/imgs/heart (2).png'
 import { Link } from 'react-router-dom'
 function ProductInfoMain(props) {
 
+  const [produto, setProduto] = useState({
+    quantidade: 1,
+    doll1:props.doll1,
+    id: props.codProduto,
+    name: props.nome,
+    price: props.preco,
+    product: props.item,
+    incrementar: props.alterarQuantidade,
+    decrementar: props.alterarQuantidade,
+    quantidade: props.quantidade,
+    total: props.total
+  })
+
   const trocarImagem  =(el) => {
     var imgProduto = document.getElementById("imgProduto");
     imgProduto.src = el.src;

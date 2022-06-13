@@ -41,7 +41,7 @@ function exchangesReturn() {
                 </div>
                     
                    <div className="col-10 col-sm-11 sining-text">
-                    <p >Atualização: 26 de Dezembro de 2021</p>
+                    <p >Atualização: 27 de Maio de 2022</p>
                     <br />
                     <p>PIMPOLHOS</p>
                     </div>

@@ -54,6 +54,26 @@
     display: flex;
 }
 
+.zap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.divZap{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 80px;
+    
+}
+
+.divZap button{
+    background-color: transparent;
+}
+
+.divZap img{
+    width: 80%;
+}
+
 @media (max-width: 767px){ 
     .custom-input{
         display: block !important;
